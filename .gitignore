@@ -1,0 +1,10 @@
+Debug/
+Release/
+Models/
+
+*.sublime-workspace
+*.obj
+*.exe
+*.sublime-workspace
+*.pdb
+*.idb
