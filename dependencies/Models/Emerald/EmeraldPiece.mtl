@@ -1,0 +1,16 @@
+newmtl material_0
+Ka 1 1 1
+Kd 1 1 1
+Ks 0 0 0
+illum 1
+newmtl material_4BA30C
+Ka 0.69803923368454 0.69803923368454 0.69803923368454
+Kd 0.69803923368454 0.69803923368454 0.69803923368454
+d 0.800000011920929
+Tr 0.800000011920929
+Ks 1 1 1
+illum 1
+texid 48
+map_Ka ref_eme.png
+map_Kd ref_eme.png
+#EOF
