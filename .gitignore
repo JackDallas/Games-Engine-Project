@@ -1,6 +1,4 @@
-Debug/
-Release/
-Models/
+bin/
 
 *.sublime-workspace
 *.obj
