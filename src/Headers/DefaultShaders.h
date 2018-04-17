@@ -84,9 +84,9 @@ private:
 		v.push_back("View");
 		v.push_back("Projection");
 		return std::make_shared<Shader>(
-		           FileUtils::getProgramPath() + "\\Shaders\\defaultVertShader.vert", 
-		           FileUtils::getProgramPath() + "\\Shaders\\defaultFragShader.frag", 
-		           v);
+		           FileUtils::getProgramPath() + "..\\src\\Shaders\\defaultVertShader.vert", 
+		           FileUtils::getProgramPath() + "..\\src\\Shaders\\defaultFragShader.frag", 
+		           v,true);
 	}
 	static std::shared_ptr<Shader> initTVF() {
 		std::vector<std::string> v;
@@ -95,9 +95,9 @@ private:
 		v.push_back("Projection");
 		v.push_back("Tex");
 		return std::make_shared<Shader>(
-		           FileUtils::getProgramPath() + "\\Shaders\\texturedVertShader.vert", 
-		           FileUtils::getProgramPath() + "\\Shaders\\texturedFragShader.frag",
-		           v);
+		           FileUtils::getProgramPath() + "..\\src\\Shaders\\texturedVertShader.vert", 
+		           FileUtils::getProgramPath() + "..\\src\\Shaders\\texturedFragShader.frag",
+		           v,true);
 	}
 	static std::shared_ptr<Shader> initLTVF() {
 		std::vector<std::string> v;
@@ -114,8 +114,8 @@ private:
 		v.push_back("Shininess");
 		v.push_back("Alpha");
 		return std::make_shared<Shader>(
-		           FileUtils::getProgramPath() + "\\Shaders\\litTexturedVertShader.vert", 
-		           FileUtils::getProgramPath() + "\\Shaders\\litTexturedFragShader.frag", 
-		           v);
+		           FileUtils::getProgramPath() + "..\\src\\Shaders\\litTexturedVertShader.vert", 
+		           FileUtils::getProgramPath() + "..\\src\\Shaders\\litTexturedFragShader.frag", 
+		           v,true);
 	}
 };

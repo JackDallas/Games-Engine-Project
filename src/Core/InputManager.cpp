@@ -7,28 +7,53 @@
 #include "gameEngine.h"
 #include "Context.h"
 //GL
-#include <GL/freeglut.h>
+#include "imgui_impl.h"
+
 //std
-#include <cctype> // toupper islower
+#include <cctype>
 //Helpers
 #include "Logger.h"
+#include "GraphicsUtils.h"
+#include <iostream>
 
 void InputManager::init() {
-	glutMotionFunc(motionEvent);
-	glutPassiveMotionFunc(motionEvent);
-	
-	glutMouseFunc(mouseEvent);
-	glutKeyboardFunc(KeyboardEvent);
-	glutSpecialFunc(SpecialKeyboardEvent);
+	SDL_SetRelativeMouseMode(GraphicsUtils::boolToSDL(gameEngine::context->captureInput));
 }
 
-void InputManager::motionEvent(int x, int y) {
-	Mouse_Input i; 
+void InputManager::processInput() {
+	SDL_SetRelativeMouseMode(GraphicsUtils::boolToSDL(gameEngine::context->captureInput));
+
+	SDL_Event event;
+	while (SDL_PollEvent(&event))
+	{
+		ImGui_ImplSdlGL3_ProcessEvent(&event);
+		switch (event.type) {
+		case SDL_QUIT:
+			gameEngine::context->running = false;
+			break;
+		case SDL_KEYDOWN | SDL_KEYDOWN:
+			KeyboardEvent(&event);
+			break;
+		case SDL_MOUSEMOTION:
+			motionEvent(&event);
+			break;
+		case SDL_MOUSEBUTTONDOWN | SDL_MOUSEBUTTONUP :
+			mouseEvent(&event);
+			break;
+		}
+
+	}
+}
+
+void InputManager::motionEvent(SDL_Event *event) {
+	Mouse_Input i;
 
 	Mouse_Position mp ;
-	mp.x = x;
-	mp.y = y;
-	
+	mp.x = event->motion.x;
+	mp.y = event->motion.y;
+	mp.xRel = event->motion.xrel;
+	mp.yRel = event->motion.yrel;
+
 	i.type = Mouse_InputType::MOUSE_MOVEMENT;
 	i.mousePosition = mp;
 
@@ -41,18 +66,18 @@ void InputManager::motionEvent(int x, int y) {
 	}
 }
 
-void InputManager::mouseEvent(int button, int state, int x, int y) {
-	Mouse_Input i; 
+void InputManager::mouseEvent(SDL_Event *event) {
+	Mouse_Input i;
 
-	Mouse_Position mp ;
-	mp.x = x;
-	mp.y = y;
-	
-	i.type = (state == 0) ? Mouse_InputType::MOUSE_DOWN : Mouse_InputType::MOUSE_UP;
-	
+	Mouse_Position mp;
+	mp.x = event->button.x;
+	mp.y = event->button.y;
+
+	i.type = (event->button.type == SDL_MOUSEBUTTONDOWN) ? Mouse_InputType::MOUSE_DOWN : Mouse_InputType::MOUSE_UP;
+
 	i.mousePosition = mp;
-	
-	i.key =	Mouse_InputKey(button);
+
+	i.key =	Mouse_InputKey(event->button.button);
 
 	if (!gameEngine::context->gameObjects.empty()) {
 		for (std::shared_ptr<GameObject> go : gameEngine::context->gameObjects) {
@@ -63,16 +88,19 @@ void InputManager::mouseEvent(int button, int state, int x, int y) {
 	}
 }
 
-void InputManager::KeyboardEvent(unsigned char key, int x, int y) {
-	if (key == 27) {//todo debug mode
+void InputManager::KeyboardEvent(SDL_Event *event) {
+	if (event->key.keysym.sym == SDLK_ESCAPE) { //todo debug mode
+		gameEngine::context->running = false;
 		exit (0);
-	}//if esc is pressed
-
-	char keyCode = std::toupper(key); // Force Upper case we don't care this is controller input
+	} else if (event->key.keysym.sym == SDLK_m) {
+		gameEngine::context->captureInput = !gameEngine::context->captureInput;
+	}
 
 	Key_Input i; //Input struct
-	i.type = Key_InputType::KEY_DOWN;
-	i.key = Key_InputKey(int(keyCode)); // Enums and chars require explicit casting
+
+	i.type = (event->type == SDL_KEYDOWN) ? Key_InputType::KEY_DOWN : Key_InputType::KEY_UP;
+
+	i.key = Key_InputKey(event->key.keysym.sym); // Enums and chars require explicit casting
 
 	if (!gameEngine::context->gameObjects.empty()) {
 		for (std::shared_ptr<GameObject> go : gameEngine::context->gameObjects) {
@@ -81,21 +109,4 @@ void InputManager::KeyboardEvent(unsigned char key, int x, int y) {
 			}
 		}
 	}
-	//INPUT SO RE-RENDER
-	//glutPostRedisplay();
-}
-
-void InputManager::SpecialKeyboardEvent(int key, int x, int y) {
-	Key_Input i;
-	i.type = Key_InputType::KEY_DOWN;
-	i.key = Key_InputKey(int(key));
-	if (!gameEngine::context->gameObjects.empty()) {
-		for (std::shared_ptr<GameObject> go : gameEngine::context->gameObjects) {
-			for (std::shared_ptr<Component> comp : go->Components) {
-				comp->onKeyEvent(i);
-			}
-		}
-	}
-	//INPUT SO RE-RENDER
-	//glutPostRedisplay();
 }

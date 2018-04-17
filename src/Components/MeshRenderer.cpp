@@ -1,7 +1,6 @@
 #include "MeshRenderer.h"
 
 #include <GL/glew.h>
-#include <GL/freeglut.h>
 
 #include <glm/gtc/type_ptr.hpp>
 
@@ -39,6 +38,12 @@ void MeshRenderer::attachMesh(std::shared_ptr<Mesh> _mesh, std::shared_ptr<Shade
 
 void MeshRenderer::onAwake() {
 	transform = gameObject.lock()->getComponent<Transform>();
+}
+
+void MeshRenderer::onUpdate(float deltaTime){
+	if(shader->liveReload){
+		shader->checkForReload();
+	}
 }
 
 void MeshRenderer::onRender() {

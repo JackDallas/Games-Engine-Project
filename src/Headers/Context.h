@@ -1,4 +1,6 @@
 #pragma once
+//ext
+#include <SDL2/SDL.h>
 //std
 #include <memory>
 #include <vector>
@@ -26,5 +28,21 @@ struct Context {
 	/**
 	lastTime, the last time for calculation the delta time
 	*/
-	float lastTime;
+	int lastTime;
+	/**
+	running, control boolean for the loop
+	*/
+	bool running;
+	/** 
+	SDL vars 
+	*/
+	SDL_Window* window;
+	SDL_Renderer* renderer;
+	SDL_GLContext SDLContext;
+
+	/**
+	Capture input mode ?
+	*/
+	bool captureInput = true;
+
 };

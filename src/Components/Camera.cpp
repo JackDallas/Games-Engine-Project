@@ -9,8 +9,6 @@
 #include "gameEngine.h"
 #include "EngineConfig.h"
 
-#include <GL/freeglut.h>
-
 //Static getter shortcut for the main camera
 std::weak_ptr<Camera> Camera::getMainCamera() {
 	return gameEngine::context->mainCamera->getComponent<Camera>();
@@ -20,13 +18,15 @@ std::weak_ptr<Camera> Camera::getMainCamera() {
 void Camera::onAwake() {
 	transform = gameObject.lock()->getComponent<Transform>();
 
+	setCameraMode(CameraMode::LOOKAT);
+
 	transform.lock()->positionChangedCallback(std::bind(&Camera::transformUpdate, this));
 
 	target = glm::vec3(0, 0, 0); 
 
 	onDisplayChange();
 	updateViewMatrix();
-}
+} 
 
  
 glm::mat4 Camera::getViewMatrix() {

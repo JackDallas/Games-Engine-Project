@@ -12,13 +12,14 @@ class Controller : public Component {
 public:
 	void onAwake();
 	void onKeyEvent(Key_Input i);
-	void onMouseEvent(Mouse_Input i); 
-
+	void onMouseEvent(Mouse_Input i);
+	void onUpdate(float deltaT);
 private:
 	/**
 	lastMousePos, the last position of the mouse in screen space
 	*/
-	glm::vec4 lastMousePos;
+	float xMChange = 0, yMChange = 0;
+	bool WChange = false, SChange = false, AChange = false, DChange = false;
 	/**
 	transform, reference to the gameobjects transform component
 	*/

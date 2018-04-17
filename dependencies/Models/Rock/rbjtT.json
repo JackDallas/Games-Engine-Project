@@ -1,0 +1,1711 @@
+{
+  "properties": [
+    {
+      "value": "open", 
+      "key": "mesh type"
+    }, 
+    {
+      "value": "medium", 
+      "key": "size"
+    }
+  ], 
+  "name": "rock_granite_medium_Yellow_Mossy_Cracked_Rough_set_Quarry_rbjtT", 
+  "tags": [
+    "Mossy", 
+    "Cracked", 
+    "Rough", 
+    "Multicolor"
+  ], 
+  "brushes": [
+    {
+      "uri": "Aset_rock_granite_M_rbjtT_Brush_001.tif"
+    }, 
+    {
+      "uri": "Aset_rock_granite_M_rbjtT_Brush_002.tif"
+    }, 
+    {
+      "uri": "Aset_rock_granite_M_rbjtT_Brush_003.tif"
+    }, 
+    {
+      "uri": "Aset_rock_granite_M_rbjtT_Brush_004.tif"
+    }, 
+    {
+      "uri": "Aset_rock_granite_M_rbjtT_Brush_005.tif"
+    }
+  ], 
+  "points": 6, 
+  "previews": {
+    "images": [
+      {
+        "resolution": "1700x309", 
+        "uri": "Aset_rock_granite_M_rbjtT_Thumb_Highpoly.png", 
+        "tags": [
+          "thumb", 
+          "preview"
+        ]
+      }, 
+      {
+        "resolution": "3400x618", 
+        "uri": "Aset_rock_granite_M_rbjtT_Thumb_Highpoly_Retina.png", 
+        "tags": [
+          "preview", 
+          "retina"
+        ]
+      }, 
+      {
+        "resolution": "1700x311", 
+        "uri": "Aset_rock_granite_M_rbjtT_Thumb_LOD0.png", 
+        "tags": [
+          "lod0", 
+          "preview"
+        ]
+      }, 
+      {
+        "resolution": "3400x622", 
+        "uri": "Aset_rock_granite_M_rbjtT_Thumb_LOD0_Retina.png", 
+        "tags": [
+          "lod0", 
+          "preview", 
+          "retina"
+        ]
+      }, 
+      {
+        "resolution": "1700x311", 
+        "uri": "Aset_rock_granite_M_rbjtT_Thumb_LOD1.png", 
+        "tags": [
+          "lod1", 
+          "preview"
+        ]
+      }, 
+      {
+        "resolution": "3400x622", 
+        "uri": "Aset_rock_granite_M_rbjtT_Thumb_LOD1_Retina.png", 
+        "tags": [
+          "lod1", 
+          "preview", 
+          "retina"
+        ]
+      }, 
+      {
+        "resolution": "1700x311", 
+        "uri": "Aset_rock_granite_M_rbjtT_Thumb_LOD2.png", 
+        "tags": [
+          "lod2", 
+          "preview"
+        ]
+      }, 
+      {
+        "resolution": "3400x622", 
+        "uri": "Aset_rock_granite_M_rbjtT_Thumb_LOD2_Retina.png", 
+        "tags": [
+          "lod2", 
+          "preview", 
+          "retina"
+        ]
+      }, 
+      {
+        "resolution": "1700x311", 
+        "uri": "Aset_rock_granite_M_rbjtT_Thumb_LOD3.png", 
+        "tags": [
+          "lod3", 
+          "preview"
+        ]
+      }, 
+      {
+        "resolution": "3400x622", 
+        "uri": "Aset_rock_granite_M_rbjtT_Thumb_LOD3_Retina.png", 
+        "tags": [
+          "lod3", 
+          "preview", 
+          "retina"
+        ]
+      }, 
+      {
+        "resolution": "1700x311", 
+        "uri": "Aset_rock_granite_M_rbjtT_Thumb_LOD4.png", 
+        "tags": [
+          "lod4", 
+          "preview"
+        ]
+      }, 
+      {
+        "resolution": "3400x623", 
+        "uri": "Aset_rock_granite_M_rbjtT_Thumb_LOD4_Retina.png", 
+        "tags": [
+          "lod4", 
+          "preview", 
+          "retina"
+        ]
+      }, 
+      {
+        "resolution": "1700x311", 
+        "uri": "Aset_rock_granite_M_rbjtT_Thumb_LOD5.png", 
+        "tags": [
+          "lod5", 
+          "preview"
+        ]
+      }, 
+      {
+        "resolution": "3400x622", 
+        "uri": "Aset_rock_granite_M_rbjtT_Thumb_LOD5_Retina.png", 
+        "tags": [
+          "lod5", 
+          "preview", 
+          "retina"
+        ]
+      }
+    ], 
+    "scaleReferences": [
+      {
+        "tag": "human", 
+        "uri": "rbjtT_scale.png"
+      }
+    ], 
+    "relativeSize": "4x1"
+  }, 
+  "environment": {
+    "biome": "temperate-forest", 
+    "region": "Oceania"
+  }, 
+  "meta": [
+    {
+      "key": "length", 
+      "name": "Length", 
+      "value": "0.26m"
+    }, 
+    {
+      "key": "width", 
+      "name": "Width", 
+      "value": "0.24m"
+    }, 
+    {
+      "key": "height", 
+      "name": "Height", 
+      "value": "0.09m"
+    }, 
+    {
+      "key": "texelDensity", 
+      "name": "Texel Density", 
+      "value": "55 px/m"
+    }, 
+    {
+      "key": "assembly", 
+      "name": "Assembly", 
+      "value": "False"
+    }, 
+    {
+      "key": "color", 
+      "name": "Color", 
+      "value": "Yellow"
+    }, 
+    {
+      "key": "iteration", 
+      "name": "Iteration Number", 
+      "value": "%%iteration%%"
+    }, 
+    {
+      "key": "set", 
+      "name": "Set Toggle", 
+      "value": "True"
+    }, 
+    {
+      "key": "setname", 
+      "name": "Set Name", 
+      "value": "Quarry"
+    }, 
+    {
+      "key": "points", 
+      "name": "Points", 
+      "value": 6
+    }
+  ], 
+  "references": [], 
+  "categories": [
+    "3d", 
+    "rock", 
+    "granite"
+  ], 
+  "components": [
+    {
+      "colorSpace": "sRGB", 
+      "type": "albedo", 
+      "name": "Albedo", 
+      "averageColor": "#6F5C34", 
+      "uris": [
+        {
+          "physicalSize": "1x1", 
+          "resolutions": [
+            {
+              "resolution": "256x256", 
+              "formats": [
+                {
+                  "mimeType": "image/jpeg", 
+                  "bitDepth": 8, 
+                  "uri": "Aset_rock_granite_M_rbjtT_256_Albedo.jpg"
+                }, 
+                {
+                  "mimeType": "image/x-exr", 
+                  "bitDepth": 32, 
+                  "uri": "Aset_rock_granite_M_rbjtT_256_Albedo.exr"
+                }
+              ]
+            }, 
+            {
+              "resolution": "512x512", 
+              "formats": [
+                {
+                  "mimeType": "image/jpeg", 
+                  "bitDepth": 8, 
+                  "uri": "Aset_rock_granite_M_rbjtT_512_Albedo.jpg"
+                }, 
+                {
+                  "mimeType": "image/x-exr", 
+                  "bitDepth": 32, 
+                  "uri": "Aset_rock_granite_M_rbjtT_512_Albedo.exr"
+                }
+              ]
+            }, 
+            {
+              "resolution": "1024x1024", 
+              "formats": [
+                {
+                  "mimeType": "image/jpeg", 
+                  "bitDepth": 8, 
+                  "uri": "Aset_rock_granite_M_rbjtT_1K_Albedo.jpg"
+                }, 
+                {
+                  "mimeType": "image/x-exr", 
+                  "bitDepth": 32, 
+                  "uri": "Aset_rock_granite_M_rbjtT_1K_Albedo.exr"
+                }
+              ]
+            }, 
+            {
+              "resolution": "2048x2048", 
+              "formats": [
+                {
+                  "mimeType": "image/jpeg", 
+                  "bitDepth": 8, 
+                  "uri": "Aset_rock_granite_M_rbjtT_2K_Albedo.jpg"
+                }, 
+                {
+                  "mimeType": "image/x-exr", 
+                  "bitDepth": 32, 
+                  "uri": "Aset_rock_granite_M_rbjtT_2K_Albedo.exr"
+                }
+              ]
+            }, 
+            {
+              "resolution": "4096x4096", 
+              "formats": [
+                {
+                  "mimeType": "image/jpeg", 
+                  "bitDepth": 8, 
+                  "uri": "Aset_rock_granite_M_rbjtT_4K_Albedo.jpg"
+                }, 
+                {
+                  "mimeType": "image/x-exr", 
+                  "bitDepth": 32, 
+                  "uri": "Aset_rock_granite_M_rbjtT_4K_Albedo.exr"
+                }
+              ]
+            }, 
+            {
+              "resolution": "8192x8192", 
+              "formats": [
+                {
+                  "mimeType": "image/jpeg", 
+                  "bitDepth": 8, 
+                  "uri": "Aset_rock_granite_M_rbjtT_8K_Albedo.jpg"
+                }, 
+                {
+                  "mimeType": "image/x-exr", 
+                  "bitDepth": 32, 
+                  "uri": "Aset_rock_granite_M_rbjtT_8K_Albedo.exr"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }, 
+    {
+      "colorSpace": "sRGB", 
+      "type": "bump", 
+      "name": "Bump", 
+      "averageColor": "#7F7F7F", 
+      "uris": [
+        {
+          "physicalSize": "1x1", 
+          "resolutions": [
+            {
+              "resolution": "256x256", 
+              "formats": [
+                {
+                  "mimeType": "image/jpeg", 
+                  "bitDepth": 8, 
+                  "uri": "Aset_rock_granite_M_rbjtT_256_Bump.jpg"
+                }, 
+                {
+                  "mimeType": "image/x-exr", 
+                  "bitDepth": 32, 
+                  "uri": "Aset_rock_granite_M_rbjtT_256_Bump.exr"
+                }
+              ]
+            }, 
+            {
+              "resolution": "512x512", 
+              "formats": [
+                {
+                  "mimeType": "image/jpeg", 
+                  "bitDepth": 8, 
+                  "uri": "Aset_rock_granite_M_rbjtT_512_Bump.jpg"
+                }, 
+                {
+                  "mimeType": "image/x-exr", 
+                  "bitDepth": 32, 
+                  "uri": "Aset_rock_granite_M_rbjtT_512_Bump.exr"
+                }
+              ]
+            }, 
+            {
+              "resolution": "1024x1024", 
+              "formats": [
+                {
+                  "mimeType": "image/jpeg", 
+                  "bitDepth": 8, 
+                  "uri": "Aset_rock_granite_M_rbjtT_1K_Bump.jpg"
+                }, 
+                {
+                  "mimeType": "image/x-exr", 
+                  "bitDepth": 32, 
+                  "uri": "Aset_rock_granite_M_rbjtT_1K_Bump.exr"
+                }
+              ]
+            }, 
+            {
+              "resolution": "2048x2048", 
+              "formats": [
+                {
+                  "mimeType": "image/jpeg", 
+                  "bitDepth": 8, 
+                  "uri": "Aset_rock_granite_M_rbjtT_2K_Bump.jpg"
+                }, 
+                {
+                  "mimeType": "image/x-exr", 
+                  "bitDepth": 32, 
+                  "uri": "Aset_rock_granite_M_rbjtT_2K_Bump.exr"
+                }
+              ]
+            }, 
+            {
+              "resolution": "4096x4096", 
+              "formats": [
+                {
+                  "mimeType": "image/jpeg", 
+                  "bitDepth": 8, 
+                  "uri": "Aset_rock_granite_M_rbjtT_4K_Bump.jpg"
+                }, 
+                {
+                  "mimeType": "image/x-exr", 
+                  "bitDepth": 32, 
+                  "uri": "Aset_rock_granite_M_rbjtT_4K_Bump.exr"
+                }
+              ]
+            }, 
+            {
+              "resolution": "8192x8192", 
+              "formats": [
+                {
+                  "mimeType": "image/jpeg", 
+                  "bitDepth": 8, 
+                  "uri": "Aset_rock_granite_M_rbjtT_8K_Bump.jpg"
+                }, 
+                {
+                  "mimeType": "image/x-exr", 
+                  "bitDepth": 32, 
+                  "uri": "Aset_rock_granite_M_rbjtT_8K_Bump.exr"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }, 
+    {
+      "colorSpace": "sRGB", 
+      "type": "cavity", 
+      "name": "Cavity", 
+      "averageColor": "#868686", 
+      "uris": [
+        {
+          "physicalSize": "1x1", 
+          "resolutions": [
+            {
+              "resolution": "256x256", 
+              "formats": [
+                {
+                  "mimeType": "image/jpeg", 
+                  "bitDepth": 8, 
+                  "uri": "Aset_rock_granite_M_rbjtT_256_Cavity.jpg"
+                }, 
+                {
+                  "mimeType": "image/x-exr", 
+                  "bitDepth": 32, 
+                  "uri": "Aset_rock_granite_M_rbjtT_256_Cavity.exr"
+                }
+              ]
+            }, 
+            {
+              "resolution": "512x512", 
+              "formats": [
+                {
+                  "mimeType": "image/jpeg", 
+                  "bitDepth": 8, 
+                  "uri": "Aset_rock_granite_M_rbjtT_512_Cavity.jpg"
+                }, 
+                {
+                  "mimeType": "image/x-exr", 
+                  "bitDepth": 32, 
+                  "uri": "Aset_rock_granite_M_rbjtT_512_Cavity.exr"
+                }
+              ]
+            }, 
+            {
+              "resolution": "1024x1024", 
+              "formats": [
+                {
+                  "mimeType": "image/jpeg", 
+                  "bitDepth": 8, 
+                  "uri": "Aset_rock_granite_M_rbjtT_1K_Cavity.jpg"
+                }, 
+                {
+                  "mimeType": "image/x-exr", 
+                  "bitDepth": 32, 
+                  "uri": "Aset_rock_granite_M_rbjtT_1K_Cavity.exr"
+                }
+              ]
+            }, 
+            {
+              "resolution": "2048x2048", 
+              "formats": [
+                {
+                  "mimeType": "image/jpeg", 
+                  "bitDepth": 8, 
+                  "uri": "Aset_rock_granite_M_rbjtT_2K_Cavity.jpg"
+                }, 
+                {
+                  "mimeType": "image/x-exr", 
+                  "bitDepth": 32, 
+                  "uri": "Aset_rock_granite_M_rbjtT_2K_Cavity.exr"
+                }
+              ]
+            }, 
+            {
+              "resolution": "4096x4096", 
+              "formats": [
+                {
+                  "mimeType": "image/jpeg", 
+                  "bitDepth": 8, 
+                  "uri": "Aset_rock_granite_M_rbjtT_4K_Cavity.jpg"
+                }, 
+                {
+                  "mimeType": "image/x-exr", 
+                  "bitDepth": 32, 
+                  "uri": "Aset_rock_granite_M_rbjtT_4K_Cavity.exr"
+                }
+              ]
+            }, 
+            {
+              "resolution": "8192x8192", 
+              "formats": [
+                {
+                  "mimeType": "image/jpeg", 
+                  "bitDepth": 8, 
+                  "uri": "Aset_rock_granite_M_rbjtT_8K_Cavity.jpg"
+                }, 
+                {
+                  "mimeType": "image/x-exr", 
+                  "bitDepth": 32, 
+                  "uri": "Aset_rock_granite_M_rbjtT_8K_Cavity.exr"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }, 
+    {
+      "colorSpace": "sRGB", 
+      "type": "displacement", 
+      "name": "Displacement", 
+      "averageColor": "#7F7F7F", 
+      "uris": [
+        {
+          "physicalSize": "1x1", 
+          "resolutions": [
+            {
+              "resolution": "256x256", 
+              "formats": [
+                {
+                  "mimeType": "image/jpeg", 
+                  "bitDepth": 8, 
+                  "uri": "Aset_rock_granite_M_rbjtT_256_Displacement.jpg"
+                }, 
+                {
+                  "mimeType": "image/x-exr", 
+                  "bitDepth": 32, 
+                  "uri": "Aset_rock_granite_M_rbjtT_256_Displacement.exr"
+                }
+              ]
+            }, 
+            {
+              "resolution": "512x512", 
+              "formats": [
+                {
+                  "mimeType": "image/jpeg", 
+                  "bitDepth": 8, 
+                  "uri": "Aset_rock_granite_M_rbjtT_512_Displacement.jpg"
+                }, 
+                {
+                  "mimeType": "image/x-exr", 
+                  "bitDepth": 32, 
+                  "uri": "Aset_rock_granite_M_rbjtT_512_Displacement.exr"
+                }
+              ]
+            }, 
+            {
+              "resolution": "1024x1024", 
+              "formats": [
+                {
+                  "mimeType": "image/jpeg", 
+                  "bitDepth": 8, 
+                  "uri": "Aset_rock_granite_M_rbjtT_1K_Displacement.jpg"
+                }, 
+                {
+                  "mimeType": "image/x-exr", 
+                  "bitDepth": 32, 
+                  "uri": "Aset_rock_granite_M_rbjtT_1K_Displacement.exr"
+                }
+              ]
+            }, 
+            {
+              "resolution": "2048x2048", 
+              "formats": [
+                {
+                  "mimeType": "image/jpeg", 
+                  "bitDepth": 8, 
+                  "uri": "Aset_rock_granite_M_rbjtT_2K_Displacement.jpg"
+                }, 
+                {
+                  "mimeType": "image/x-exr", 
+                  "bitDepth": 32, 
+                  "uri": "Aset_rock_granite_M_rbjtT_2K_Displacement.exr"
+                }
+              ]
+            }, 
+            {
+              "resolution": "4096x4096", 
+              "formats": [
+                {
+                  "mimeType": "image/jpeg", 
+                  "bitDepth": 8, 
+                  "uri": "Aset_rock_granite_M_rbjtT_4K_Displacement.jpg"
+                }, 
+                {
+                  "mimeType": "image/x-exr", 
+                  "bitDepth": 32, 
+                  "uri": "Aset_rock_granite_M_rbjtT_4K_Displacement.exr"
+                }
+              ]
+            }, 
+            {
+              "resolution": "8192x8192", 
+              "formats": [
+                {
+                  "mimeType": "image/jpeg", 
+                  "bitDepth": 8, 
+                  "uri": "Aset_rock_granite_M_rbjtT_8K_Displacement.jpg"
+                }, 
+                {
+                  "mimeType": "image/x-exr", 
+                  "bitDepth": 32, 
+                  "uri": "Aset_rock_granite_M_rbjtT_8K_Displacement.exr"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }, 
+    {
+      "colorSpace": "sRGB", 
+      "type": "gloss", 
+      "name": "Gloss", 
+      "averageColor": "#0B0B0B", 
+      "uris": [
+        {
+          "physicalSize": "1x1", 
+          "resolutions": [
+            {
+              "resolution": "256x256", 
+              "formats": [
+                {
+                  "mimeType": "image/jpeg", 
+                  "bitDepth": 8, 
+                  "uri": "Aset_rock_granite_M_rbjtT_256_Gloss.jpg"
+                }, 
+                {
+                  "mimeType": "image/x-exr", 
+                  "bitDepth": 32, 
+                  "uri": "Aset_rock_granite_M_rbjtT_256_Gloss.exr"
+                }
+              ]
+            }, 
+            {
+              "resolution": "512x512", 
+              "formats": [
+                {
+                  "mimeType": "image/jpeg", 
+                  "bitDepth": 8, 
+                  "uri": "Aset_rock_granite_M_rbjtT_512_Gloss.jpg"
+                }, 
+                {
+                  "mimeType": "image/x-exr", 
+                  "bitDepth": 32, 
+                  "uri": "Aset_rock_granite_M_rbjtT_512_Gloss.exr"
+                }
+              ]
+            }, 
+            {
+              "resolution": "1024x1024", 
+              "formats": [
+                {
+                  "mimeType": "image/jpeg", 
+                  "bitDepth": 8, 
+                  "uri": "Aset_rock_granite_M_rbjtT_1K_Gloss.jpg"
+                }, 
+                {
+                  "mimeType": "image/x-exr", 
+                  "bitDepth": 32, 
+                  "uri": "Aset_rock_granite_M_rbjtT_1K_Gloss.exr"
+                }
+              ]
+            }, 
+            {
+              "resolution": "2048x2048", 
+              "formats": [
+                {
+                  "mimeType": "image/jpeg", 
+                  "bitDepth": 8, 
+                  "uri": "Aset_rock_granite_M_rbjtT_2K_Gloss.jpg"
+                }, 
+                {
+                  "mimeType": "image/x-exr", 
+                  "bitDepth": 32, 
+                  "uri": "Aset_rock_granite_M_rbjtT_2K_Gloss.exr"
+                }
+              ]
+            }, 
+            {
+              "resolution": "4096x4096", 
+              "formats": [
+                {
+                  "mimeType": "image/jpeg", 
+                  "bitDepth": 8, 
+                  "uri": "Aset_rock_granite_M_rbjtT_4K_Gloss.jpg"
+                }, 
+                {
+                  "mimeType": "image/x-exr", 
+                  "bitDepth": 32, 
+                  "uri": "Aset_rock_granite_M_rbjtT_4K_Gloss.exr"
+                }
+              ]
+            }, 
+            {
+              "resolution": "8192x8192", 
+              "formats": [
+                {
+                  "mimeType": "image/jpeg", 
+                  "bitDepth": 8, 
+                  "uri": "Aset_rock_granite_M_rbjtT_8K_Gloss.jpg"
+                }, 
+                {
+                  "mimeType": "image/x-exr", 
+                  "bitDepth": 32, 
+                  "uri": "Aset_rock_granite_M_rbjtT_8K_Gloss.exr"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }, 
+    {
+      "colorSpace": "sRGB", 
+      "type": "normal", 
+      "name": "Normal", 
+      "averageColor": "#8081F5", 
+      "uris": [
+        {
+          "physicalSize": "1x1", 
+          "resolutions": [
+            {
+              "resolution": "256x256", 
+              "formats": [
+                {
+                  "mimeType": "image/x-exr", 
+                  "lodType": "lod", 
+                  "bitDepth": 8, 
+                  "uri": "Aset_rock_granite_M_rbjtT_256_Normal_LOD0.exr", 
+                  "tris": 7282
+                }, 
+                {
+                  "mimeType": "image/jpeg", 
+                  "lodType": "lod", 
+                  "bitDepth": 32, 
+                  "uri": "Aset_rock_granite_M_rbjtT_256_Normal_LOD0.jpg", 
+                  "tris": 7282
+                }, 
+                {
+                  "mimeType": "image/x-exr", 
+                  "lodType": "lod", 
+                  "bitDepth": 8, 
+                  "uri": "Aset_rock_granite_M_rbjtT_256_Normal_LOD1.exr", 
+                  "tris": 7282
+                }, 
+                {
+                  "mimeType": "image/jpeg", 
+                  "lodType": "lod", 
+                  "bitDepth": 32, 
+                  "uri": "Aset_rock_granite_M_rbjtT_256_Normal_LOD1.jpg", 
+                  "tris": 7282
+                }, 
+                {
+                  "mimeType": "image/x-exr", 
+                  "lodType": "lod", 
+                  "bitDepth": 8, 
+                  "uri": "Aset_rock_granite_M_rbjtT_256_Normal_LOD2.exr", 
+                  "tris": 6799
+                }, 
+                {
+                  "mimeType": "image/jpeg", 
+                  "lodType": "lod", 
+                  "bitDepth": 32, 
+                  "uri": "Aset_rock_granite_M_rbjtT_256_Normal_LOD2.jpg", 
+                  "tris": 6799
+                }, 
+                {
+                  "mimeType": "image/x-exr", 
+                  "lodType": "lod", 
+                  "bitDepth": 8, 
+                  "uri": "Aset_rock_granite_M_rbjtT_256_Normal_LOD3.exr", 
+                  "tris": 5099
+                }, 
+                {
+                  "mimeType": "image/jpeg", 
+                  "lodType": "lod", 
+                  "bitDepth": 32, 
+                  "uri": "Aset_rock_granite_M_rbjtT_256_Normal_LOD3.jpg", 
+                  "tris": 5099
+                }, 
+                {
+                  "mimeType": "image/x-exr", 
+                  "lodType": "lod", 
+                  "bitDepth": 8, 
+                  "uri": "Aset_rock_granite_M_rbjtT_256_Normal_LOD4.exr", 
+                  "tris": 2548
+                }, 
+                {
+                  "mimeType": "image/jpeg", 
+                  "lodType": "lod", 
+                  "bitDepth": 32, 
+                  "uri": "Aset_rock_granite_M_rbjtT_256_Normal_LOD4.jpg", 
+                  "tris": 2548
+                }, 
+                {
+                  "mimeType": "image/x-exr", 
+                  "lodType": "lod", 
+                  "bitDepth": 8, 
+                  "uri": "Aset_rock_granite_M_rbjtT_256_Normal_LOD5.exr", 
+                  "tris": 1273
+                }, 
+                {
+                  "mimeType": "image/jpeg", 
+                  "lodType": "lod", 
+                  "bitDepth": 32, 
+                  "uri": "Aset_rock_granite_M_rbjtT_256_Normal_LOD5.jpg", 
+                  "tris": 1273
+                }
+              ]
+            }, 
+            {
+              "resolution": "512x512", 
+              "formats": [
+                {
+                  "mimeType": "image/jpeg", 
+                  "lodType": "lod", 
+                  "bitDepth": 8, 
+                  "uri": "Aset_rock_granite_M_rbjtT_512_Normal_LOD0.jpg", 
+                  "tris": 7282
+                }, 
+                {
+                  "mimeType": "image/x-exr", 
+                  "lodType": "lod", 
+                  "bitDepth": 32, 
+                  "uri": "Aset_rock_granite_M_rbjtT_512_Normal_LOD0.exr", 
+                  "tris": 7282
+                }, 
+                {
+                  "mimeType": "image/jpeg", 
+                  "lodType": "lod", 
+                  "bitDepth": 8, 
+                  "uri": "Aset_rock_granite_M_rbjtT_512_Normal_LOD1.jpg", 
+                  "tris": 7282
+                }, 
+                {
+                  "mimeType": "image/x-exr", 
+                  "lodType": "lod", 
+                  "bitDepth": 32, 
+                  "uri": "Aset_rock_granite_M_rbjtT_512_Normal_LOD1.exr", 
+                  "tris": 7282
+                }, 
+                {
+                  "mimeType": "image/jpeg", 
+                  "lodType": "lod", 
+                  "bitDepth": 8, 
+                  "uri": "Aset_rock_granite_M_rbjtT_512_Normal_LOD2.jpg", 
+                  "tris": 6799
+                }, 
+                {
+                  "mimeType": "image/x-exr", 
+                  "lodType": "lod", 
+                  "bitDepth": 32, 
+                  "uri": "Aset_rock_granite_M_rbjtT_512_Normal_LOD2.exr", 
+                  "tris": 6799
+                }, 
+                {
+                  "mimeType": "image/jpeg", 
+                  "lodType": "lod", 
+                  "bitDepth": 8, 
+                  "uri": "Aset_rock_granite_M_rbjtT_512_Normal_LOD3.jpg", 
+                  "tris": 5099
+                }, 
+                {
+                  "mimeType": "image/x-exr", 
+                  "lodType": "lod", 
+                  "bitDepth": 32, 
+                  "uri": "Aset_rock_granite_M_rbjtT_512_Normal_LOD3.exr", 
+                  "tris": 5099
+                }, 
+                {
+                  "mimeType": "image/jpeg", 
+                  "lodType": "lod", 
+                  "bitDepth": 8, 
+                  "uri": "Aset_rock_granite_M_rbjtT_512_Normal_LOD4.jpg", 
+                  "tris": 2548
+                }, 
+                {
+                  "mimeType": "image/x-exr", 
+                  "lodType": "lod", 
+                  "bitDepth": 32, 
+                  "uri": "Aset_rock_granite_M_rbjtT_512_Normal_LOD4.exr", 
+                  "tris": 2548
+                }, 
+                {
+                  "mimeType": "image/jpeg", 
+                  "lodType": "lod", 
+                  "bitDepth": 8, 
+                  "uri": "Aset_rock_granite_M_rbjtT_512_Normal_LOD5.jpg", 
+                  "tris": 1273
+                }, 
+                {
+                  "mimeType": "image/x-exr", 
+                  "lodType": "lod", 
+                  "bitDepth": 32, 
+                  "uri": "Aset_rock_granite_M_rbjtT_512_Normal_LOD5.exr", 
+                  "tris": 1273
+                }
+              ]
+            }, 
+            {
+              "resolution": "1024x1024", 
+              "formats": [
+                {
+                  "mimeType": "image/jpeg", 
+                  "lodType": "lod", 
+                  "bitDepth": 8, 
+                  "uri": "Aset_rock_granite_M_rbjtT_1K_Normal_LOD0.jpg", 
+                  "tris": 7282
+                }, 
+                {
+                  "mimeType": "image/x-exr", 
+                  "lodType": "lod", 
+                  "bitDepth": 32, 
+                  "uri": "Aset_rock_granite_M_rbjtT_1K_Normal_LOD0.exr", 
+                  "tris": 7282
+                }, 
+                {
+                  "mimeType": "image/jpeg", 
+                  "lodType": "lod", 
+                  "bitDepth": 8, 
+                  "uri": "Aset_rock_granite_M_rbjtT_1K_Normal_LOD1.jpg", 
+                  "tris": 7282
+                }, 
+                {
+                  "mimeType": "image/x-exr", 
+                  "lodType": "lod", 
+                  "bitDepth": 32, 
+                  "uri": "Aset_rock_granite_M_rbjtT_1K_Normal_LOD1.exr", 
+                  "tris": 7282
+                }, 
+                {
+                  "mimeType": "image/jpeg", 
+                  "lodType": "lod", 
+                  "bitDepth": 8, 
+                  "uri": "Aset_rock_granite_M_rbjtT_1K_Normal_LOD2.jpg", 
+                  "tris": 6799
+                }, 
+                {
+                  "mimeType": "image/x-exr", 
+                  "lodType": "lod", 
+                  "bitDepth": 32, 
+                  "uri": "Aset_rock_granite_M_rbjtT_1K_Normal_LOD2.exr", 
+                  "tris": 6799
+                }, 
+                {
+                  "mimeType": "image/jpeg", 
+                  "lodType": "lod", 
+                  "bitDepth": 8, 
+                  "uri": "Aset_rock_granite_M_rbjtT_1K_Normal_LOD3.jpg", 
+                  "tris": 5099
+                }, 
+                {
+                  "mimeType": "image/x-exr", 
+                  "lodType": "lod", 
+                  "bitDepth": 32, 
+                  "uri": "Aset_rock_granite_M_rbjtT_1K_Normal_LOD3.exr", 
+                  "tris": 5099
+                }, 
+                {
+                  "mimeType": "image/jpeg", 
+                  "lodType": "lod", 
+                  "bitDepth": 8, 
+                  "uri": "Aset_rock_granite_M_rbjtT_1K_Normal_LOD4.jpg", 
+                  "tris": 2548
+                }, 
+                {
+                  "mimeType": "image/x-exr", 
+                  "lodType": "lod", 
+                  "bitDepth": 32, 
+                  "uri": "Aset_rock_granite_M_rbjtT_1K_Normal_LOD4.exr", 
+                  "tris": 2548
+                }, 
+                {
+                  "mimeType": "image/jpeg", 
+                  "lodType": "lod", 
+                  "bitDepth": 8, 
+                  "uri": "Aset_rock_granite_M_rbjtT_1K_Normal_LOD5.jpg", 
+                  "tris": 1273
+                }, 
+                {
+                  "mimeType": "image/x-exr", 
+                  "lodType": "lod", 
+                  "bitDepth": 32, 
+                  "uri": "Aset_rock_granite_M_rbjtT_1K_Normal_LOD5.exr", 
+                  "tris": 1273
+                }
+              ]
+            }, 
+            {
+              "resolution": "2048x2048", 
+              "formats": [
+                {
+                  "mimeType": "image/jpeg", 
+                  "lodType": "lod", 
+                  "bitDepth": 8, 
+                  "uri": "Aset_rock_granite_M_rbjtT_2K_Normal_LOD0.jpg", 
+                  "tris": 7282
+                }, 
+                {
+                  "mimeType": "image/x-exr", 
+                  "lodType": "lod", 
+                  "bitDepth": 32, 
+                  "uri": "Aset_rock_granite_M_rbjtT_2K_Normal_LOD0.exr", 
+                  "tris": 7282
+                }, 
+                {
+                  "mimeType": "image/jpeg", 
+                  "lodType": "lod", 
+                  "bitDepth": 8, 
+                  "uri": "Aset_rock_granite_M_rbjtT_2K_Normal_LOD1.jpg", 
+                  "tris": 7282
+                }, 
+                {
+                  "mimeType": "image/x-exr", 
+                  "lodType": "lod", 
+                  "bitDepth": 32, 
+                  "uri": "Aset_rock_granite_M_rbjtT_2K_Normal_LOD1.exr", 
+                  "tris": 7282
+                }, 
+                {
+                  "mimeType": "image/jpeg", 
+                  "lodType": "lod", 
+                  "bitDepth": 8, 
+                  "uri": "Aset_rock_granite_M_rbjtT_2K_Normal_LOD2.jpg", 
+                  "tris": 6799
+                }, 
+                {
+                  "mimeType": "image/x-exr", 
+                  "lodType": "lod", 
+                  "bitDepth": 32, 
+                  "uri": "Aset_rock_granite_M_rbjtT_2K_Normal_LOD2.exr", 
+                  "tris": 6799
+                }, 
+                {
+                  "mimeType": "image/jpeg", 
+                  "lodType": "lod", 
+                  "bitDepth": 8, 
+                  "uri": "Aset_rock_granite_M_rbjtT_2K_Normal_LOD3.jpg", 
+                  "tris": 5099
+                }, 
+                {
+                  "mimeType": "image/x-exr", 
+                  "lodType": "lod", 
+                  "bitDepth": 32, 
+                  "uri": "Aset_rock_granite_M_rbjtT_2K_Normal_LOD3.exr", 
+                  "tris": 5099
+                }, 
+                {
+                  "mimeType": "image/jpeg", 
+                  "lodType": "lod", 
+                  "bitDepth": 8, 
+                  "uri": "Aset_rock_granite_M_rbjtT_2K_Normal_LOD4.jpg", 
+                  "tris": 2548
+                }, 
+                {
+                  "mimeType": "image/x-exr", 
+                  "lodType": "lod", 
+                  "bitDepth": 32, 
+                  "uri": "Aset_rock_granite_M_rbjtT_2K_Normal_LOD4.exr", 
+                  "tris": 2548
+                }, 
+                {
+                  "mimeType": "image/jpeg", 
+                  "lodType": "lod", 
+                  "bitDepth": 8, 
+                  "uri": "Aset_rock_granite_M_rbjtT_2K_Normal_LOD5.jpg", 
+                  "tris": 1273
+                }, 
+                {
+                  "mimeType": "image/x-exr", 
+                  "lodType": "lod", 
+                  "bitDepth": 32, 
+                  "uri": "Aset_rock_granite_M_rbjtT_2K_Normal_LOD5.exr", 
+                  "tris": 1273
+                }
+              ]
+            }, 
+            {
+              "resolution": "4096x4096", 
+              "formats": [
+                {
+                  "mimeType": "image/jpeg", 
+                  "lodType": "lod", 
+                  "bitDepth": 8, 
+                  "uri": "Aset_rock_granite_M_rbjtT_4K_Normal_LOD0.jpg", 
+                  "tris": 7282
+                }, 
+                {
+                  "mimeType": "image/x-exr", 
+                  "lodType": "lod", 
+                  "bitDepth": 32, 
+                  "uri": "Aset_rock_granite_M_rbjtT_4K_Normal_LOD0.exr", 
+                  "tris": 7282
+                }, 
+                {
+                  "mimeType": "image/jpeg", 
+                  "lodType": "lod", 
+                  "bitDepth": 8, 
+                  "uri": "Aset_rock_granite_M_rbjtT_4K_Normal_LOD1.jpg", 
+                  "tris": 7282
+                }, 
+                {
+                  "mimeType": "image/x-exr", 
+                  "lodType": "lod", 
+                  "bitDepth": 32, 
+                  "uri": "Aset_rock_granite_M_rbjtT_4K_Normal_LOD1.exr", 
+                  "tris": 7282
+                }, 
+                {
+                  "mimeType": "image/jpeg", 
+                  "lodType": "lod", 
+                  "bitDepth": 8, 
+                  "uri": "Aset_rock_granite_M_rbjtT_4K_Normal_LOD2.jpg", 
+                  "tris": 6799
+                }, 
+                {
+                  "mimeType": "image/x-exr", 
+                  "lodType": "lod", 
+                  "bitDepth": 32, 
+                  "uri": "Aset_rock_granite_M_rbjtT_4K_Normal_LOD2.exr", 
+                  "tris": 6799
+                }, 
+                {
+                  "mimeType": "image/jpeg", 
+                  "lodType": "lod", 
+                  "bitDepth": 8, 
+                  "uri": "Aset_rock_granite_M_rbjtT_4K_Normal_LOD3.jpg", 
+                  "tris": 5099
+                }, 
+                {
+                  "mimeType": "image/x-exr", 
+                  "lodType": "lod", 
+                  "bitDepth": 32, 
+                  "uri": "Aset_rock_granite_M_rbjtT_4K_Normal_LOD3.exr", 
+                  "tris": 5099
+                }, 
+                {
+                  "mimeType": "image/jpeg", 
+                  "lodType": "lod", 
+                  "bitDepth": 8, 
+                  "uri": "Aset_rock_granite_M_rbjtT_4K_Normal_LOD4.jpg", 
+                  "tris": 2548
+                }, 
+                {
+                  "mimeType": "image/x-exr", 
+                  "lodType": "lod", 
+                  "bitDepth": 32, 
+                  "uri": "Aset_rock_granite_M_rbjtT_4K_Normal_LOD4.exr", 
+                  "tris": 2548
+                }, 
+                {
+                  "mimeType": "image/jpeg", 
+                  "lodType": "lod", 
+                  "bitDepth": 8, 
+                  "uri": "Aset_rock_granite_M_rbjtT_4K_Normal_LOD5.jpg", 
+                  "tris": 1273
+                }, 
+                {
+                  "mimeType": "image/x-exr", 
+                  "lodType": "lod", 
+                  "bitDepth": 32, 
+                  "uri": "Aset_rock_granite_M_rbjtT_4K_Normal_LOD5.exr", 
+                  "tris": 1273
+                }
+              ]
+            }, 
+            {
+              "resolution": "8192x8192", 
+              "formats": [
+                {
+                  "mimeType": "image/jpeg", 
+                  "lodType": "lod", 
+                  "bitDepth": 8, 
+                  "uri": "Aset_rock_granite_M_rbjtT_8K_Normal_LOD0.jpg", 
+                  "tris": 7282
+                }, 
+                {
+                  "mimeType": "image/x-exr", 
+                  "lodType": "lod", 
+                  "bitDepth": 32, 
+                  "uri": "Aset_rock_granite_M_rbjtT_8K_Normal_LOD0.exr", 
+                  "tris": 7282
+                }, 
+                {
+                  "mimeType": "image/jpeg", 
+                  "lodType": "lod", 
+                  "bitDepth": 8, 
+                  "uri": "Aset_rock_granite_M_rbjtT_8K_Normal_LOD1.jpg", 
+                  "tris": 7282
+                }, 
+                {
+                  "mimeType": "image/x-exr", 
+                  "lodType": "lod", 
+                  "bitDepth": 32, 
+                  "uri": "Aset_rock_granite_M_rbjtT_8K_Normal_LOD1.exr", 
+                  "tris": 7282
+                }, 
+                {
+                  "mimeType": "image/jpeg", 
+                  "lodType": "lod", 
+                  "bitDepth": 8, 
+                  "uri": "Aset_rock_granite_M_rbjtT_8K_Normal_LOD2.jpg", 
+                  "tris": 6799
+                }, 
+                {
+                  "mimeType": "image/x-exr", 
+                  "lodType": "lod", 
+                  "bitDepth": 32, 
+                  "uri": "Aset_rock_granite_M_rbjtT_8K_Normal_LOD2.exr", 
+                  "tris": 6799
+                }, 
+                {
+                  "mimeType": "image/jpeg", 
+                  "lodType": "lod", 
+                  "bitDepth": 8, 
+                  "uri": "Aset_rock_granite_M_rbjtT_8K_Normal_LOD3.jpg", 
+                  "tris": 5099
+                }, 
+                {
+                  "mimeType": "image/x-exr", 
+                  "lodType": "lod", 
+                  "bitDepth": 32, 
+                  "uri": "Aset_rock_granite_M_rbjtT_8K_Normal_LOD3.exr", 
+                  "tris": 5099
+                }, 
+                {
+                  "mimeType": "image/jpeg", 
+                  "lodType": "lod", 
+                  "bitDepth": 8, 
+                  "uri": "Aset_rock_granite_M_rbjtT_8K_Normal_LOD4.jpg", 
+                  "tris": 2548
+                }, 
+                {
+                  "mimeType": "image/x-exr", 
+                  "lodType": "lod", 
+                  "bitDepth": 32, 
+                  "uri": "Aset_rock_granite_M_rbjtT_8K_Normal_LOD4.exr", 
+                  "tris": 2548
+                }, 
+                {
+                  "mimeType": "image/jpeg", 
+                  "lodType": "lod", 
+                  "bitDepth": 8, 
+                  "uri": "Aset_rock_granite_M_rbjtT_8K_Normal_LOD5.jpg", 
+                  "tris": 1273
+                }, 
+                {
+                  "mimeType": "image/x-exr", 
+                  "lodType": "lod", 
+                  "bitDepth": 32, 
+                  "uri": "Aset_rock_granite_M_rbjtT_8K_Normal_LOD5.exr", 
+                  "tris": 1273
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }, 
+    {
+      "colorSpace": "sRGB", 
+      "type": "roughness", 
+      "name": "Roughness", 
+      "averageColor": "#EEEEEE", 
+      "uris": [
+        {
+          "physicalSize": "1x1", 
+          "resolutions": [
+            {
+              "resolution": "256x256", 
+              "formats": [
+                {
+                  "mimeType": "image/jpeg", 
+                  "bitDepth": 8, 
+                  "uri": "Aset_rock_granite_M_rbjtT_256_Roughness.jpg"
+                }, 
+                {
+                  "mimeType": "image/x-exr", 
+                  "bitDepth": 32, 
+                  "uri": "Aset_rock_granite_M_rbjtT_256_Roughness.exr"
+                }
+              ]
+            }, 
+            {
+              "resolution": "512x512", 
+              "formats": [
+                {
+                  "mimeType": "image/jpeg", 
+                  "bitDepth": 8, 
+                  "uri": "Aset_rock_granite_M_rbjtT_512_Roughness.jpg"
+                }, 
+                {
+                  "mimeType": "image/x-exr", 
+                  "bitDepth": 32, 
+                  "uri": "Aset_rock_granite_M_rbjtT_512_Roughness.exr"
+                }
+              ]
+            }, 
+            {
+              "resolution": "1024x1024", 
+              "formats": [
+                {
+                  "mimeType": "image/jpeg", 
+                  "bitDepth": 8, 
+                  "uri": "Aset_rock_granite_M_rbjtT_1K_Roughness.jpg"
+                }, 
+                {
+                  "mimeType": "image/x-exr", 
+                  "bitDepth": 32, 
+                  "uri": "Aset_rock_granite_M_rbjtT_1K_Roughness.exr"
+                }
+              ]
+            }, 
+            {
+              "resolution": "2048x2048", 
+              "formats": [
+                {
+                  "mimeType": "image/jpeg", 
+                  "bitDepth": 8, 
+                  "uri": "Aset_rock_granite_M_rbjtT_2K_Roughness.jpg"
+                }, 
+                {
+                  "mimeType": "image/x-exr", 
+                  "bitDepth": 32, 
+                  "uri": "Aset_rock_granite_M_rbjtT_2K_Roughness.exr"
+                }
+              ]
+            }, 
+            {
+              "resolution": "4096x4096", 
+              "formats": [
+                {
+                  "mimeType": "image/jpeg", 
+                  "bitDepth": 8, 
+                  "uri": "Aset_rock_granite_M_rbjtT_4K_Roughness.jpg"
+                }, 
+                {
+                  "mimeType": "image/x-exr", 
+                  "bitDepth": 32, 
+                  "uri": "Aset_rock_granite_M_rbjtT_4K_Roughness.exr"
+                }
+              ]
+            }, 
+            {
+              "resolution": "8192x8192", 
+              "formats": [
+                {
+                  "mimeType": "image/jpeg", 
+                  "bitDepth": 8, 
+                  "uri": "Aset_rock_granite_M_rbjtT_8K_Roughness.jpg"
+                }, 
+                {
+                  "mimeType": "image/x-exr", 
+                  "bitDepth": 32, 
+                  "uri": "Aset_rock_granite_M_rbjtT_8K_Roughness.exr"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }, 
+    {
+      "colorSpace": "sRGB", 
+      "type": "specular", 
+      "name": "Specular", 
+      "averageColor": "#151515", 
+      "uris": [
+        {
+          "physicalSize": "1x1", 
+          "resolutions": [
+            {
+              "resolution": "256x256", 
+              "formats": [
+                {
+                  "mimeType": "image/jpeg", 
+                  "bitDepth": 8, 
+                  "uri": "Aset_rock_granite_M_rbjtT_256_Specular.jpg"
+                }, 
+                {
+                  "mimeType": "image/x-exr", 
+                  "bitDepth": 32, 
+                  "uri": "Aset_rock_granite_M_rbjtT_256_Specular.exr"
+                }
+              ]
+            }, 
+            {
+              "resolution": "512x512", 
+              "formats": [
+                {
+                  "mimeType": "image/jpeg", 
+                  "bitDepth": 8, 
+                  "uri": "Aset_rock_granite_M_rbjtT_512_Specular.jpg"
+                }, 
+                {
+                  "mimeType": "image/x-exr", 
+                  "bitDepth": 32, 
+                  "uri": "Aset_rock_granite_M_rbjtT_512_Specular.exr"
+                }
+              ]
+            }, 
+            {
+              "resolution": "1024x1024", 
+              "formats": [
+                {
+                  "mimeType": "image/jpeg", 
+                  "bitDepth": 8, 
+                  "uri": "Aset_rock_granite_M_rbjtT_1K_Specular.jpg"
+                }, 
+                {
+                  "mimeType": "image/x-exr", 
+                  "bitDepth": 32, 
+                  "uri": "Aset_rock_granite_M_rbjtT_1K_Specular.exr"
+                }
+              ]
+            }, 
+            {
+              "resolution": "2048x2048", 
+              "formats": [
+                {
+                  "mimeType": "image/jpeg", 
+                  "bitDepth": 8, 
+                  "uri": "Aset_rock_granite_M_rbjtT_2K_Specular.jpg"
+                }, 
+                {
+                  "mimeType": "image/x-exr", 
+                  "bitDepth": 32, 
+                  "uri": "Aset_rock_granite_M_rbjtT_2K_Specular.exr"
+                }
+              ]
+            }, 
+            {
+              "resolution": "4096x4096", 
+              "formats": [
+                {
+                  "mimeType": "image/jpeg", 
+                  "bitDepth": 8, 
+                  "uri": "Aset_rock_granite_M_rbjtT_4K_Specular.jpg"
+                }, 
+                {
+                  "mimeType": "image/x-exr", 
+                  "bitDepth": 32, 
+                  "uri": "Aset_rock_granite_M_rbjtT_4K_Specular.exr"
+                }
+              ]
+            }, 
+            {
+              "resolution": "8192x8192", 
+              "formats": [
+                {
+                  "mimeType": "image/jpeg", 
+                  "bitDepth": 8, 
+                  "uri": "Aset_rock_granite_M_rbjtT_8K_Specular.jpg"
+                }, 
+                {
+                  "mimeType": "image/x-exr", 
+                  "bitDepth": 32, 
+                  "uri": "Aset_rock_granite_M_rbjtT_8K_Specular.exr"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }, 
+    {
+      "colorSpace": "sRGB", 
+      "type": "normalbump", 
+      "name": "NormalBump", 
+      "averageColor": "#7F7FFE", 
+      "uris": [
+        {
+          "physicalSize": "1x1", 
+          "resolutions": [
+            {
+              "resolution": "256x256", 
+              "formats": [
+                {
+                  "mimeType": "image/jpeg", 
+                  "bitDepth": "8", 
+                  "uri": "Aset_rock_granite_M_rbjtT_256_NormalBump.jpg"
+                }, 
+                {
+                  "mimeType": "image/x-exr", 
+                  "bitDepth": "32", 
+                  "uri": "Aset_rock_granite_M_rbjtT_256_NormalBump.exr"
+                }
+              ]
+            }, 
+            {
+              "resolution": "512x512", 
+              "formats": [
+                {
+                  "mimeType": "image/jpeg", 
+                  "bitDepth": "8", 
+                  "uri": "Aset_rock_granite_M_rbjtT_512_NormalBump.jpg"
+                }, 
+                {
+                  "mimeType": "image/x-exr", 
+                  "bitDepth": "32", 
+                  "uri": "Aset_rock_granite_M_rbjtT_512_NormalBump.exr"
+                }
+              ]
+            }, 
+            {
+              "resolution": "1024x1024", 
+              "formats": [
+                {
+                  "mimeType": "image/jpeg", 
+                  "bitDepth": "8", 
+                  "uri": "Aset_rock_granite_M_rbjtT_1K_NormalBump.jpg"
+                }, 
+                {
+                  "mimeType": "image/x-exr", 
+                  "bitDepth": "32", 
+                  "uri": "Aset_rock_granite_M_rbjtT_1K_NormalBump.exr"
+                }
+              ]
+            }, 
+            {
+              "resolution": "2048x2048", 
+              "formats": [
+                {
+                  "mimeType": "image/jpeg", 
+                  "bitDepth": "8", 
+                  "uri": "Aset_rock_granite_M_rbjtT_2K_NormalBump.jpg"
+                }, 
+                {
+                  "mimeType": "image/x-exr", 
+                  "bitDepth": "32", 
+                  "uri": "Aset_rock_granite_M_rbjtT_2K_NormalBump.exr"
+                }
+              ]
+            }, 
+            {
+              "resolution": "4096x4096", 
+              "formats": [
+                {
+                  "mimeType": "image/jpeg", 
+                  "bitDepth": "8", 
+                  "uri": "Aset_rock_granite_M_rbjtT_4K_NormalBump.jpg"
+                }, 
+                {
+                  "mimeType": "image/x-exr", 
+                  "bitDepth": "32", 
+                  "uri": "Aset_rock_granite_M_rbjtT_4K_NormalBump.exr"
+                }
+              ]
+            }, 
+            {
+              "resolution": "8192x8192", 
+              "formats": [
+                {
+                  "mimeType": "image/jpeg", 
+                  "bitDepth": "8", 
+                  "uri": "Aset_rock_granite_M_rbjtT_8K_NormalBump.jpg"
+                }, 
+                {
+                  "mimeType": "image/x-exr", 
+                  "bitDepth": "32", 
+                  "uri": "Aset_rock_granite_M_rbjtT_8K_NormalBump.exr"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ], 
+  "id": "rbjtT", 
+  "averageColor": "#85774D", 
+  "meshes": [
+    {
+      "type": "zbrush", 
+      "uris": [
+        {
+          "mimeType": "application/x-ztl", 
+          "uri": "Aset_rock_granite_M_rbjtT_ZTool.ztl"
+        }
+      ]
+    }, 
+    {
+      "type": "original", 
+      "uris": [
+        {
+          "mimeType": "application/x-obj", 
+          "uri": "Aset_rock_granite_M_rbjtT_High.obj"
+        }, 
+        {
+          "mimeType": "application/x-fbx", 
+          "uri": "Aset_rock_granite_M_rbjtT_High.FBX"
+        }
+      ]
+    }, 
+    {
+      "type": "lod", 
+      "uris": [
+        {
+          "mimeType": "application/x-obj", 
+          "uri": "Aset_rock_granite_M_rbjtT_LOD0.obj"
+        }, 
+        {
+          "mimeType": "application/x-fbx", 
+          "uri": "Aset_rock_granite_M_rbjtT_LOD0.FBX"
+        }
+      ], 
+      "tris": 12090
+    }, 
+    {
+      "type": "lod", 
+      "uris": [
+        {
+          "mimeType": "application/x-obj", 
+          "uri": "Aset_rock_granite_M_rbjtT_LOD1.obj"
+        }, 
+        {
+          "mimeType": "application/x-fbx", 
+          "uri": "Aset_rock_granite_M_rbjtT_LOD1.FBX"
+        }
+      ], 
+      "tris": 9066
+    }, 
+    {
+      "type": "lod", 
+      "uris": [
+        {
+          "mimeType": "application/x-obj", 
+          "uri": "Aset_rock_granite_M_rbjtT_LOD2.obj"
+        }, 
+        {
+          "mimeType": "application/x-fbx", 
+          "uri": "Aset_rock_granite_M_rbjtT_LOD2.FBX"
+        }
+      ], 
+      "tris": 6799
+    }, 
+    {
+      "type": "lod", 
+      "uris": [
+        {
+          "mimeType": "application/x-obj", 
+          "uri": "Aset_rock_granite_M_rbjtT_LOD3.obj"
+        }, 
+        {
+          "mimeType": "application/x-fbx", 
+          "uri": "Aset_rock_granite_M_rbjtT_LOD3.FBX"
+        }
+      ], 
+      "tris": 5099
+    }, 
+    {
+      "type": "lod", 
+      "uris": [
+        {
+          "mimeType": "application/x-obj", 
+          "uri": "Aset_rock_granite_M_rbjtT_LOD4.obj"
+        }, 
+        {
+          "mimeType": "application/x-fbx", 
+          "uri": "Aset_rock_granite_M_rbjtT_LOD4.FBX"
+        }
+      ], 
+      "tris": 2548
+    }, 
+    {
+      "type": "lod", 
+      "uris": [
+        {
+          "mimeType": "application/x-obj", 
+          "uri": "Aset_rock_granite_M_rbjtT_LOD5.obj"
+        }, 
+        {
+          "mimeType": "application/x-fbx", 
+          "uri": "Aset_rock_granite_M_rbjtT_LOD5.FBX"
+        }
+      ], 
+      "tris": 1273
+    }
+  ]
+}

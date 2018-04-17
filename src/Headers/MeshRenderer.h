@@ -1,7 +1,6 @@
 #pragma once
 //ext
 #include <GL/glew.h>
-#include <GL/freeglut.h>
 //std
 #include <memory>
 //int
@@ -22,6 +21,7 @@ public:
 	void attachMesh(std::shared_ptr<Mesh> _mesh,std::shared_ptr<Shader> _shader);
 
 	void onRender();
+	void onUpdate(float deltaTime);
 	void onAwake();
 	/**
 	Reference to the shader we render the mesh with

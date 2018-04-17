@@ -17,7 +17,7 @@ public:
 	@param argc
 	@param argv
 	*/
-	static void init(int argc, char* argv[]);
+	static bool init(int argc, char* argv[]);
 	/**
 	configure the engine with an EngineConfig
 	this must be called after init() but before any other gameEngine calls
@@ -32,7 +32,7 @@ public:
 	/**
 	called whenever the engine isn't doing anything, calls onUpdate on all components 
 	*/
-	static void idle();
+	static void update(float deltaTime);
 	/**
 	creates a new game object on the engine and returns a reference to it
 	@return a reference to a new gameObject

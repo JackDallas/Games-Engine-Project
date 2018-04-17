@@ -1,7 +1,6 @@
 #pragma once
 //ext
 #include <GL/glew.h>
-#include <GL/freeglut.h>
 //std
 #include <string>
 
@@ -14,18 +13,18 @@ public:
 	/**
 	Mesh constructor of a mesh with a texture
 	*/
-	Mesh(std::string filename, std::string textureFilename); 
+	Mesh(std::string filename, std::string textureFilename);
 	~Mesh();
 	/**
-	Buffer of vec3 vertex positions set to layout 0 in GL 
+	Buffer of vec3 vertex positions set to layout 0 in GL
 	*/
 	GLuint VAO;
 	/**
-	Buffer of vec3 Normals set to layout 1 in GL 
+	Buffer of vec3 Normals set to layout 1 in GL
 	*/
 	GLuint normBuffer;
 	/**
-	Buffer of vec2 UV's set to layout 2 in GL 
+	Buffer of vec2 UV's set to layout 2 in GL
 	*/
 	GLuint texBuffer;
 	/**
@@ -38,5 +37,9 @@ public:
 	*/
 	unsigned int numVertices;
 private:
+
 	void loadMesh(std::string filename);
+	void oldLoader(std::string filename);
+	void newLoader(std::string filename);
+	void LogDetails();
 };

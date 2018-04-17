@@ -1,56 +1,41 @@
 SRC= \
-  src/*.cpp\
+  src/*.cpp \
   src/Components/*.cpp \
   src/Core/*.cpp \
   src/Utils/*.cpp  
 
-CFLAGS=/DGLEW_STATIC /DFREEGLUT_LIB_PRAGMAS=0 /MD /Iinclude /Isrc\Headers
-CXXFLAGS=/EHsc
-LDFLAGS=opengl32.lib lib\freeglut.lib lib\glew.lib lib\SOIL.lib
-LINKFLAGS=/link /NODEFAULTLIB:LIBCMTD
-DEBUGFLAGS= /DDEBUGMODE
+EXE_NAME=engine.exe
+# Directories
+EXTERNAL_FILES=dependencies
+
+LIB_FILES=$(EXTERNAL_FILES)\libs
+DLL_FILES=$(EXTERNAL_FILES)\dlls
+INCLUDE_FILES=$(EXTERNAL_FILES)\includes
+EXTERN_FILES=$(EXTERNAL_FILES)\extern\*.cpp
+MODEL_FILES=$(EXTERNAL_FILES)\Models
+
+OUT_FOLDER=out
+RELEASE_FOLDER=Release
+
+#Flags
+CFLAGS=/DGLEW_STATIC /MD /I$(INCLUDE_FILES) /Isrc\Headers /EHsc  
+LDFLAGS=opengl32.lib $(LIB_FILES)\SDL2maind.lib $(LIB_FILES)\SDL2d.lib $(LIB_FILES)\glew32s.lib $(LIB_FILES)\SOIL.lib
+LINKFLAGS=/NODEFAULTLIB:LIBCMTD /SUBSYSTEM:CONSOLE /NODEFAULTLIB:MSVCRTD /NODEFAULTLIB:LIBCMT 
+DEBUGFLAGS=/DDEBUGMODE /DEBUG:FULL /ZI
 
 all: engine.exe
 
 engine.exe: copy
-	cl $(CFLAGS) $(DEBUGFLAGS) $(CXXFLAGS) $(SRC) $(LDFLAGS) /FoDebug\ /FeDebug\engine.exe $(LINKFLAGS)
+	cl $(CFLAGS) $(DEBUGFLAGS) $(EXTERN_FILES) $(SRC) $(LDFLAGS) /Fo$(OUT_FOLDER)\ /Fe$(OUT_FOLDER)\$(EXE_NAME) /link $(LINKFLAGS)
 
 copy:
-	if not exist Debug\NUL mkdir Debug\ 
-
-	if not exist Debug\Shaders\NUL mkdir Debug\Shaders\ 
-
-	if not exist Debug\Models\NUL mkdir Debug\Models\ 
-
-	del /q Debug\Shaders\* 
+	if not exist $(OUT_FOLDER)\NUL mkdir $(OUT_FOLDER)\ 
 	
-	copy /y src\Shaders\* Debug\Shaders\ 
-	copy /y dlls\* Debug\ 
-	copy /y Models\* Debug\Models\ 
+	copy /y $(DLL_FILES)\* $(OUT_FOLDER)\ 
 
-release:
-	if not exist Release\NUL mkdir Release\ 
-
-	if not exist Release\Shaders\NUL mkdir Release\Shaders\ 
-
-	if not exist Release\Models\NUL mkdir Release\Models\ 
-
-	del /q Release\Shaders\* 
-	
-	copy /y src\Shaders\* Release\Shaders\ 
-	copy /y dlls\* Release\ 
-	copy /y Models\* Release\Models\ 
-
-	cl $(CFLAGS) $(CXXFLAGS) $(SRC) $(LDFLAGS) /FoRelease\ /FeRelease\engine.exe $(LINKFLAGS)
-
-makelib:
-	if not exist LIBOUT\NUL mkdir LIBOUT\ 
-
-	LIB.EXE /OUT:LIBOUT\gameEngine.lib Release\*.obj
-
+#makelib:
+#	if not exist LIBOUT\NUL mkdir LIBOUT\ 
+#
+#	LIB.EXE /OUT:LIBOUT\gameEngine.lib Release\*.obj
 clean:
-	del /q Debug\Shaders\
-
-	del /q Debug\Models\
-	
-	del /q Debug\*
+	rd /q /s out

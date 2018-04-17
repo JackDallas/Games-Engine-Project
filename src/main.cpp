@@ -6,6 +6,7 @@
 
 #include "EngineConfig.h"
 #include "GraphicsUtils.h"
+#include "FileUtils.h"
 
 #include "GameObject.h"
 #include "Component.h"
@@ -13,8 +14,10 @@
 #include "Camera.h"
 #include "Transform.h"
 #include "MeshRenderer.h"
+#include "PBRRenderer.h"
 #include "Mesh.h"
-#include "RotateScript.h"
+#include "CircleScript.h"
+#include "PBRModelHelper.h"
 
 #include <glm/vec3.hpp>
 
@@ -22,61 +25,51 @@
 
 int main(int argc, char* argv[]) {
 	gameEngine::init(argc, argv);
-
-	EngineConfig config(1280, 720, Colour(0.0f, 0.0f, 0.4f, 1.0f), false, "Dallas' Game");
+//1280, 720
+	EngineConfig config(1280, 720, Colour(0.0f, 0.0f, 0.4f, 1.0f), false, "PBR Renderer - DISSO");
 
 	gameEngine::configure(config);
 
-	//Create a new GameObject
-	std::shared_ptr<GameObject> go = gameEngine::newGameObject();
-		//Attach a transform and set the position
-		std::shared_ptr<Transform> goTrans = go->addComponent<Transform>();
-		goTrans->setPosition(glm::vec3(0.0f, 10.0f, 0.0f));
-
-		//create a mesh
-		std::shared_ptr<Mesh> mesh_jiggy = std::make_shared<Mesh>("Models\\Jiggy\\Jiggy.obj","Models\\Jiggy\\image_0000.png");
-
-		//Attach a mesh renderer
-		std::shared_ptr<MeshRenderer> meshR = go->addComponent<MeshRenderer>();
-
-			meshR->attachMesh(mesh_jiggy);
-
-
-	std::shared_ptr<Mesh> mesh_emerald = std::make_shared<Mesh>("Models\\Emerald\\EmeraldPiece.obj","Models\\Emerald\\ref_eme.png");
-	
-	//Create a new GameObject
-	std::shared_ptr<GameObject> Emerald1 = gameEngine::newGameObject();
-		//Attach a transform and set the position
-		Emerald1->addComponent<Transform>()->setPosition(glm::vec3(-5.0f, 10.0f, 0.0f));
-		//Attach a mesh renderer and mesh
-		Emerald1->addComponent<MeshRenderer>()->attachMesh(mesh_emerald);
-		Emerald1->addComponent<RotateScript>();
-
-	//Create a new GameObject
-	std::shared_ptr<GameObject> Emerald2 = gameEngine::newGameObject();
-		//Attach a transform and set the position
-		Emerald2->addComponent<Transform>()->setPosition(glm::vec3(5.0f, 10.0f, 0.0f));
-		//Attach a mesh renderer and mesh
-		Emerald2->addComponent<MeshRenderer>()->attachMesh(mesh_emerald);
-		Emerald2->addComponent<RotateScript>();
-
-
-	//Create a new GameObject
-	std::shared_ptr<GameObject> landscape = gameEngine::newGameObject();
-		//Attach a transform and set the position
-		std::shared_ptr<Transform> landscapeTrans = landscape->addComponent<Transform>();
-			landscapeTrans->setPosition(glm::vec3(0.0f, 0.0f, 0.0f));
-			landscapeTrans->setScale(glm::vec3(4.0f,4.0f,4.0f));
-		//create a mesh
-		std::shared_ptr<Mesh> mesh_landscape = std::make_shared<Mesh>("Models\\mountain\\mountT.blend1.obj","Models\\mountain\\ground_grass_3264_4062_Small.jpg");
-
-		//Attach a mesh renderer
-		landscape->addComponent<MeshRenderer>()->attachMesh(mesh_landscape);
 
 	std::shared_ptr<GameObject> plane = gameEngine::newGameObject();
-		plane->addComponent<Transform>()->setPosition(glm::vec3(0.0f,0.0f,0.0f));
-		std::shared_ptr<Mesh> mesh_plane = std::make_shared<Mesh>("Models\\plane.obj");
-		plane->addComponent<MeshRenderer>()->attachMesh(mesh_plane);
+	plane->addComponent<Transform>()->setPosition(glm::vec3(0.0f, 0.0f, 0.0f));
+
+	std::shared_ptr<Mesh> mesh_plane = std::make_shared<Mesh>(FileUtils::getProgramPath() + "..\\dependencies\\Models\\plane.obj");
+	plane->addComponent<MeshRenderer>()->attachMesh(mesh_plane);
+
+
+	std::shared_ptr<GameObject> jiggy = gameEngine::newGameObject();
+	jiggy->addComponent<Transform>()->setPosition(glm::vec3(10.0f, 0.0f, 10.0f));
+
+	std::shared_ptr<Mesh> mesh_jiggy = std::make_shared<Mesh>(FileUtils::getProgramPath() + "..\\dependencies\\Models\\Jiggy\\Jiggy.obj",FileUtils::getProgramPath() + "..\\dependencies\\Models\\Jiggy\\image_0000.png");
+/*PBRModelHelper::newPBRObject(FileUtils::getProgramPath() + "..\\dependencies\\Models\\Rock", "Aset_rock_granite_M_rbjtT", glm::vec3(5.0f, 0.0f, 0.0f));*/
+	std::shared_ptr<GameObject> Rock = gameEngine::newGameObject();
+	Rock->addComponent<Transform>()->setPosition(glm::vec3(5.0f, 0.0f, 0.0f));
+
+	std::shared_ptr<Mesh> rockMesh = std::make_shared<Mesh>(FileUtils::getProgramPath() + "..\\dependencies\\Models\\Rock\\Aset_rock_granite_M_rbjtT_LOD0.obj");
+
+	std::shared_ptr<PBRRenderer> rockRenderer = Rock->addComponent<PBRRenderer>();
+
+	rockRenderer->attachMesh(rockMesh);
+	rockRenderer->init(
+		FileUtils::getProgramPath() + "..\\src\\Shaders\\Rewrite_PBRVertShader.vert",
+		FileUtils::getProgramPath() + "..\\src\\Shaders\\Rewrite_PBRFragShader.frag",
+	{
+		{"Tex", FileUtils::getProgramPath() + "..\\dependencies\\Models\\Rock\\Aset_rock_granite_M_rbjtT_4K_Albedo.jpg"},
+		{"Roughness", FileUtils::getProgramPath() + "..\\dependencies\\Models\\Rock\\Aset_rock_granite_M_rbjtT_4K_Roughness.jpg"},
+		{"Spec", FileUtils::getProgramPath() + "..\\dependencies\\Models\\Rock\\Aset_rock_granite_M_rbjtT_4K_Specular.jpg"}
+	});
+
+	//std::shared_ptr<GameObject> trees = PBRModelHelper::newPBRObject(FileUtils::getProgramPath() + "..\\dependencies\\Models\\wood_chunks", "Dbrs_wood_chunks_T_oktmGD", glm::vec3(15.0f, 0.0f, 0.0f));
+
+
+	//Create a new GameObject
+	/*	std::shared_ptr<GameObject> blendSphere = gameEngine::newGameObject();
+			//Attach a transform and set the position
+			blendSphere->addComponent<Transform>()->setPosition(glm::vec3(5.0f, 0.0f, 0.0f));
+			//Attach a mesh renderer and mesh
+			std::shared_ptr<Mesh> mesh_bSphere = std::make_shared<Mesh>(FileUtils::getProgramPath() + "Models\\sphere.obj");
+			blendSphere->addComponent<MeshRenderer>()->attachMesh(mesh_bSphere);*/
 
 
 	gameEngine::run();

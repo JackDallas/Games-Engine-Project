@@ -1,7 +1,9 @@
 #include "GraphicsManager.h"
 //GL
 #include <GL/glew.h>
-#include <GL/freeglut.h>
+#include <SDL2/SDL.h>
+#include <imgui/imgui.h>
+#include "imgui_impl.h"
 //Components
 #include "GameObject.h"
 #include "Component.h"
@@ -12,18 +14,32 @@
 #include "gameEngine.h"
 
 void GraphicsManager::init() {
-//glut
+//SDL
 	//If we're full screen we let glut set the screen size otherwise set it to anything it doesn't matter at this point
-	gameEngine::context->config->getFullScreenMode() ?  glutInitWindowSize(200, 400) : glutInitWindowSize(gameEngine::context->config->getScreenWidth(), gameEngine::context->config->getScreenHeight());
+	//TODO Fullscreen mode
+	gameEngine::context->window = SDL_CreateWindow(
+	                                  gameEngine::context->config->getWindowName().c_str(),
+	                                  SDL_WINDOWPOS_UNDEFINED, SDL_WINDOWPOS_UNDEFINED,
+	                                  gameEngine::context->config->getScreenWidth(),
+	                                  gameEngine::context->config->getScreenHeight(),
+	                                  SDL_WINDOW_SHOWN | SDL_WINDOW_OPENGL);
+	gameEngine::context->renderer = SDL_CreateRenderer(gameEngine::context->window, -1, 0);
+	gameEngine::context->SDLContext = SDL_GL_CreateContext(gameEngine::context->window);
+	/*
+	gameEngine::context->config->getFullScreenMode() ?  glutInitWindowSize(200, 400) : glutInitWindowSize(gameEngine::context->config->getScreenWidth(), gameEngine::context->config->getScreenWidth());
 	glutInitDisplayMode(GLUT_RGBA | GLUT_DOUBLE | GLUT_DEPTH);
 	glutCreateWindow(gameEngine::context->config->getWindowName().c_str());
 	glutSetOption(GLUT_ACTION_ON_WINDOW_CLOSE, GLUT_ACTION_GLUTMAINLOOP_RETURNS);
 	glutSetWindowTitle(gameEngine::context->config->getWindowName().c_str());
-	if (gameEngine::context->config->getFullScreenMode()) glutFullScreen();
+	if (gameEngine::context->config->getFullScreenMode()) glutFullScreen();*/
 //
 //glew
 	Logger::Info("Initing GLEW");
 	glewInit();
+//
+//imgui
+	ImGui_ImplSdlGL3_Init(gameEngine::context->window);
+	ImGui::StyleColorsClassic();
 //
 //GL
 	Logger::Info("Initing GL");
@@ -36,8 +52,31 @@ void GraphicsManager::init() {
 	//glEnable(GL_CULL_FACE);
 	//glCullFace(GL_FRONT);
 //
-	glutDisplayFunc(display);
-	glutReshapeFunc(displayChange);
+}
+
+void GraphicsManager::renderLoading() {
+	/*
+	Temp loading bar this needs updating
+	*/
+	float vertices[] = {
+		0.0f,  0.5f,
+		0.5f, -0.5f,
+		-0.5f, -0.5f
+	};
+
+	GLuint vbo;
+	glGenBuffers(1, &vbo);
+	glBindBuffer(GL_ARRAY_BUFFER, vbo);
+	glBufferData(GL_ARRAY_BUFFER, sizeof(vertices), vertices, GL_STATIC_DRAW);
+
+	Colour c = gameEngine::context->config->getScreenClearColour();
+	glClearColor(c.r, c.g, c.b, c.a);
+	//Clear the Buffer
+	glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
+
+	glDrawArrays(GL_TRIANGLES, 0, 3);
+
+	SDL_GL_SwapWindow(gameEngine::context->window);
 }
 
 void GraphicsManager::display() {
@@ -63,8 +102,11 @@ void GraphicsManager::display() {
 	//GUI
 
 	//enable depth
+	//imgui
+	ImGui::Render();
 	//Swap out buffers
-	glutSwapBuffers();
+
+	SDL_GL_SwapWindow(gameEngine::context->window);
 }
 
 void GraphicsManager::displayChange(int width, int height) {

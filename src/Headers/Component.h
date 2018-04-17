@@ -25,7 +25,7 @@ public:
 	*/
 	virtual void onDisplayChange() {};
 	/**
-	onUpdate is called whenever GLUT isn't doing anything else
+	onUpdate 
 	@param deltaTime the time in milliseconds since the last update call.
 	*/
 	virtual void onUpdate(float deltaTime) {};

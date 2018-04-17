@@ -1,0 +1,1106 @@
+{
+  "properties": [
+    {
+      "key": "size",
+      "value": "tiny"
+    },
+    {
+      "key": "mesh type",
+      "value": "closed"
+    }
+  ],
+  "name": "",
+  "tags": [
+    "forest",
+    "chip",
+    "dry",
+    "dead",
+    "broken",
+    "nature",
+    "wood"
+  ],
+  "points": 0,
+  "previews": {
+    "images": [
+      {
+        "contentLength": 312445,
+        "resolution": "825x400",
+        "uri": "Dbrs_wood_chunks_T_oktmGD_Thumb_Highpoly.png",
+        "tags": [
+          "thumb",
+          "highpoly"
+        ]
+      },
+      {
+        "contentLength": 1126264,
+        "resolution": "1649x800",
+        "uri": "Dbrs_wood_chunks_T_oktmGD_Thumb_Highpoly_Retina.png",
+        "tags": [
+          "preview",
+          "retina"
+        ]
+      },
+      {
+        "contentLength": 311516,
+        "resolution": "825x400",
+        "uri": "Dbrs_wood_chunks_T_oktmGD_Thumb_LOD0.png",
+        "tags": [
+          "lod0",
+          "preview"
+        ]
+      },
+      {
+        "contentLength": 1131982,
+        "resolution": "1650x800",
+        "uri": "Dbrs_wood_chunks_T_oktmGD_Thumb_LOD0_Retina.png",
+        "tags": [
+          "lod0",
+          "preview",
+          "retina"
+        ]
+      },
+      {
+        "contentLength": 310124,
+        "resolution": "824x400",
+        "uri": "Dbrs_wood_chunks_T_oktmGD_Thumb_LOD1.png",
+        "tags": [
+          "lod1",
+          "preview"
+        ]
+      },
+      {
+        "contentLength": 1123579,
+        "resolution": "1648x800",
+        "uri": "Dbrs_wood_chunks_T_oktmGD_Thumb_LOD1_Retina.png",
+        "tags": [
+          "lod1",
+          "preview",
+          "retina"
+        ]
+      },
+      {
+        "contentLength": 1394,
+        "resolution": "50x24",
+        "uri": "aHBXQIF0YU5BNrmwm0c5MmxkWgkvT3kAAAAxdFJOUwAtQhciXg4IBRGyIDcpPzVCT1H7a1wgFW96hhn+T3mdl8iYOoos01CxYLK13/qR3vEjX/L/AAAC0UlEQVQ4yz2U12KrSBAFizCJHJQQSAIlK9r3/79ue5C98zRAV5+O8L2GGCpLk2IyiNZcvmAXwfZIoJXVxAE0NiXUaM2rJg7JFmJwh6XmXHN/wE0cXBNxpTjrXQdJ2jDecRnTiWWACmFzhnLB4eQRO1Wo9kyD4hDl4jhZKV0kPpDkyyM7QZS4ch1HQQ7wDBnbpRgo0YmHI49VmJrkgiAd1RqVQy5YrEgjqgp6Q39LnQRglrhXJypVwHZBiDoSaUpJ1iIqPZ8jD1YKE0kAgpDUHNJMHo6ior/tr1X8+LvJkXJcvvHJLq1EsI/ZeyRPbOD9xSIRGvJ/K7H9usDdmiSaEVMZhau9r30wIzqc3TeQRWza+oPkL+vaJem3/+YUuyGaEWlJmejGBy1vyTRbqakgK9Rbu/ZgZ4R+R/jyiPZSRWIrxLPbfJCh+UV+TPxu14jhybqYxUt72Fd0c+CDqDmXcahs5gPbXynaNvVmd59e00asLMVe4oxtg1TQCR5ago7gSB1Qx0TPp+2P1ndZRmIoOK0pBRHLyCP+BHOBZSC+Vp8XDvNY/16nGSm2Mofp3ACTOvdpnkcu+q81VpBPp+S7V5ExGmUuJJe+yneeFZ/F4a+tEoQ9arpfTU6rGdnWMxJnvmR00kNj5KKSFbl0H3l41rMD/YcUslqSS1wZj8yZ+rMdJl3u/DrB1aOMGU2Ay/8fJmn+xgSEYd9gbsl6HNpKkCm1EdOsdm28ItYSzunbeGH2LiGr+pHy3QbbYaiLhluQn5k6xtxc97N3tUAFOkVFpjNbbllWm4Ti3a52bVsVS25FfOTZ8aO4nmcJ+RUs081EE7GX9EeV3d2skubDEJSKTSkr+uzMW5Cr5fyK1QEVb1ofXZVuSHZN3d9wN1EaHjofZSXMgufZ/BTc3jHTFJdn2d7yShjIf8bR6MgaqWCf0xeS8VydiLIkl43eOHrnS+YM7j+N1zMUa/uEdwAAAABJRU5ErkJggg==",
+        "tags": [
+          "thumb",
+          "tiny"
+        ]
+      },
+      {
+        "contentLength": 82698,
+        "resolution": "825x400",
+        "uri": "Dbrs_wood_chunks_T_oktmGD_Thumb_Highpoly_thumb.jpg",
+        "tags": [
+          "thumb",
+          "highpoly",
+          "jpeg"
+        ]
+      },
+      {
+        "contentLength": 288073,
+        "resolution": "1649x800",
+        "uri": "Dbrs_wood_chunks_T_oktmGD_Thumb_Highpoly_Retina_preview.jpg",
+        "tags": [
+          "preview",
+          "retina",
+          "jpeg"
+        ]
+      },
+      {
+        "contentLength": 80983,
+        "resolution": "825x400",
+        "uri": "Dbrs_wood_chunks_T_oktmGD_Thumb_LOD0_preview.jpg",
+        "tags": [
+          "lod0",
+          "preview",
+          "jpeg"
+        ]
+      },
+      {
+        "contentLength": 282739,
+        "resolution": "1650x800",
+        "uri": "Dbrs_wood_chunks_T_oktmGD_Thumb_LOD0_Retina_preview.jpg",
+        "tags": [
+          "lod0",
+          "preview",
+          "retina",
+          "jpeg"
+        ]
+      },
+      {
+        "contentLength": 80373,
+        "resolution": "824x400",
+        "uri": "Dbrs_wood_chunks_T_oktmGD_Thumb_LOD1_preview.jpg",
+        "tags": [
+          "lod1",
+          "preview",
+          "jpeg"
+        ]
+      },
+      {
+        "contentLength": 279960,
+        "resolution": "1648x800",
+        "uri": "Dbrs_wood_chunks_T_oktmGD_Thumb_LOD1_Retina_preview.jpg",
+        "tags": [
+          "lod1",
+          "preview",
+          "retina",
+          "jpeg"
+        ]
+      },
+      {
+        "resolution": "1649x800",
+        "uri": "Dbrs_wood_chunks_T_oktmGD_Thumb_Highpoly_Retina_thumb_retina.jpg",
+        "tags": [
+          "thumb",
+          "retina",
+          "jpeg"
+        ]
+      }
+    ],
+    "relativeSize": "2x1"
+  },
+  "environment": {
+    "biome": "temperate-forest",
+    "region": "Oceania"
+  },
+  "json": {
+    "contentLength": 25901,
+    "uri": "oktmGD.json"
+  },
+  "meta": [
+    {
+      "value": "0.03m",
+      "name": "Scan Area",
+      "key": "scanArea"
+    },
+    {
+      "value": "0.01m",
+      "name": "Height",
+      "key": "height"
+    },
+    {
+      "value": "0.02m",
+      "name": "Length",
+      "key": "length"
+    },
+    {
+      "value": "0.08m",
+      "name": "Width",
+      "key": "width"
+    },
+    {
+      "value": false,
+      "name": "Tileable",
+      "key": "tileable"
+    },
+    {
+      "value": "16384 px/m",
+      "name": "Texel Density",
+      "key": "texelDensity"
+    },
+    {
+      "value": "X-Rite ColorChecker Classic",
+      "name": "Calibration",
+      "key": "calibration"
+    },
+    {
+      "value": "AUM-MKII",
+      "name": "Scanner",
+      "key": "scanner"
+    },
+    {
+      "value": "False",
+      "name": "Assembly",
+      "key": "assembly"
+    },
+    {
+      "value": "Brown",
+      "name": "Color",
+      "key": "color"
+    },
+    {
+      "value": "%%iteration%%",
+      "name": "Iteration Number",
+      "key": "iteration"
+    },
+    {
+      "value": "False",
+      "name": "Set Toggle",
+      "key": "set"
+    },
+    {
+      "value": "%%setname%%",
+      "name": "Set Name",
+      "key": "setname"
+    },
+    {
+      "value": 3,
+      "name": "Points",
+      "key": "points"
+    }
+  ],
+  "references": [],
+  "categories": [
+    "3d",
+    "trees",
+    "debris",
+    "chunks"
+  ],
+  "components": [
+    {
+      "minIntensity": 64,
+      "name": "Albedo",
+      "colorSpace": "sRGB",
+      "maxIntensity": 127,
+      "type": "albedo",
+      "uris": [
+        {
+          "physicalSize": "0.25x0.25",
+          "resolutions": [
+            {
+              "resolution": "256x256",
+              "formats": [
+                {
+                  "mimeType": "image/jpeg",
+                  "contentLength": 53100,
+                  "bitDepth": 16,
+                  "uri": "Dbrs_wood_chunks_T_oktmGD_256_Albedo.jpg"
+                },
+                {
+                  "mimeType": "image/x-exr",
+                  "contentLength": 264118,
+                  "bitDepth": 8,
+                  "uri": "Dbrs_wood_chunks_T_oktmGD_256_Albedo.exr"
+                }
+              ]
+            },
+            {
+              "resolution": "512x512",
+              "formats": [
+                {
+                  "mimeType": "image/jpeg",
+                  "contentLength": 99598,
+                  "bitDepth": 16,
+                  "uri": "Dbrs_wood_chunks_T_oktmGD_512_Albedo.jpg"
+                },
+                {
+                  "mimeType": "image/x-exr",
+                  "contentLength": 915643,
+                  "bitDepth": 8,
+                  "uri": "Dbrs_wood_chunks_T_oktmGD_512_Albedo.exr"
+                }
+              ]
+            },
+            {
+              "resolution": "1024x1024",
+              "formats": [
+                {
+                  "mimeType": "image/jpeg",
+                  "contentLength": 249047,
+                  "bitDepth": 16,
+                  "uri": "Dbrs_wood_chunks_T_oktmGD_1K_Albedo.jpg"
+                },
+                {
+                  "mimeType": "image/x-exr",
+                  "contentLength": 3258640,
+                  "bitDepth": 8,
+                  "uri": "Dbrs_wood_chunks_T_oktmGD_1K_Albedo.exr"
+                }
+              ]
+            },
+            {
+              "resolution": "2048x2048",
+              "formats": [
+                {
+                  "mimeType": "image/jpeg",
+                  "contentLength": 644401,
+                  "bitDepth": 16,
+                  "uri": "Dbrs_wood_chunks_T_oktmGD_2K_Albedo.jpg"
+                },
+                {
+                  "mimeType": "image/x-exr",
+                  "contentLength": 11344801,
+                  "bitDepth": 8,
+                  "uri": "Dbrs_wood_chunks_T_oktmGD_2K_Albedo.exr"
+                }
+              ]
+            },
+            {
+              "resolution": "4096x4096",
+              "formats": [
+                {
+                  "mimeType": "image/jpeg",
+                  "contentLength": 1827674,
+                  "bitDepth": 16,
+                  "uri": "Dbrs_wood_chunks_T_oktmGD_4K_Albedo.jpg"
+                },
+                {
+                  "mimeType": "image/x-exr",
+                  "contentLength": 38576646,
+                  "bitDepth": 8,
+                  "uri": "Dbrs_wood_chunks_T_oktmGD_4K_Albedo.exr"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "averageColor": "#705C49"
+    },
+    {
+      "minIntensity": 123,
+      "name": "Displacement",
+      "colorSpace": "Linear",
+      "maxIntensity": 159,
+      "type": "displacement",
+      "uris": [
+        {
+          "physicalSize": "0.25x0.25",
+          "resolutions": [
+            {
+              "resolution": "256x256",
+              "formats": [
+                {
+                  "mimeType": "image/jpeg",
+                  "contentLength": 29919,
+                  "bitDepth": 32,
+                  "uri": "Dbrs_wood_chunks_T_oktmGD_256_Displacement.jpg"
+                },
+                {
+                  "mimeType": "image/x-exr",
+                  "contentLength": 256313,
+                  "bitDepth": 8,
+                  "uri": "Dbrs_wood_chunks_T_oktmGD_256_Displacement.exr"
+                }
+              ]
+            },
+            {
+              "resolution": "512x512",
+              "formats": [
+                {
+                  "mimeType": "image/jpeg",
+                  "contentLength": 42991,
+                  "bitDepth": 32,
+                  "uri": "Dbrs_wood_chunks_T_oktmGD_512_Displacement.jpg"
+                },
+                {
+                  "mimeType": "image/x-exr",
+                  "contentLength": 860637,
+                  "bitDepth": 8,
+                  "uri": "Dbrs_wood_chunks_T_oktmGD_512_Displacement.exr"
+                }
+              ]
+            },
+            {
+              "resolution": "1024x1024",
+              "formats": [
+                {
+                  "mimeType": "image/jpeg",
+                  "contentLength": 78989,
+                  "bitDepth": 32,
+                  "uri": "Dbrs_wood_chunks_T_oktmGD_1K_Displacement.jpg"
+                },
+                {
+                  "mimeType": "image/x-exr",
+                  "contentLength": 3324174,
+                  "bitDepth": 8,
+                  "uri": "Dbrs_wood_chunks_T_oktmGD_1K_Displacement.exr"
+                }
+              ]
+            },
+            {
+              "resolution": "2048x2048",
+              "formats": [
+                {
+                  "mimeType": "image/jpeg",
+                  "contentLength": 162429,
+                  "bitDepth": 32,
+                  "uri": "Dbrs_wood_chunks_T_oktmGD_2K_Displacement.jpg"
+                },
+                {
+                  "mimeType": "image/x-exr",
+                  "contentLength": 11836840,
+                  "bitDepth": 8,
+                  "uri": "Dbrs_wood_chunks_T_oktmGD_2K_Displacement.exr"
+                }
+              ]
+            },
+            {
+              "resolution": "4096x4096",
+              "formats": [
+                {
+                  "mimeType": "image/jpeg",
+                  "contentLength": 447928,
+                  "bitDepth": 32,
+                  "uri": "Dbrs_wood_chunks_T_oktmGD_4K_Displacement.jpg"
+                },
+                {
+                  "mimeType": "image/x-exr",
+                  "contentLength": 41793822,
+                  "bitDepth": 8,
+                  "uri": "Dbrs_wood_chunks_T_oktmGD_4K_Displacement.exr"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "averageColor": "#898989"
+    },
+    {
+      "minIntensity": 119,
+      "name": "Bump",
+      "colorSpace": "Linear",
+      "maxIntensity": 142,
+      "type": "bump",
+      "uris": [
+        {
+          "physicalSize": "0.25x0.25",
+          "resolutions": [
+            {
+              "resolution": "256x256",
+              "formats": [
+                {
+                  "mimeType": "image/jpeg",
+                  "contentLength": 30732,
+                  "bitDepth": 32,
+                  "uri": "Dbrs_wood_chunks_T_oktmGD_256_Bump.jpg"
+                },
+                {
+                  "mimeType": "image/x-exr",
+                  "contentLength": 167782,
+                  "bitDepth": 8,
+                  "uri": "Dbrs_wood_chunks_T_oktmGD_256_Bump.exr"
+                }
+              ]
+            },
+            {
+              "resolution": "512x512",
+              "formats": [
+                {
+                  "mimeType": "image/jpeg",
+                  "contentLength": 62245,
+                  "bitDepth": 32,
+                  "uri": "Dbrs_wood_chunks_T_oktmGD_512_Bump.jpg"
+                },
+                {
+                  "mimeType": "image/x-exr",
+                  "contentLength": 473275,
+                  "bitDepth": 8,
+                  "uri": "Dbrs_wood_chunks_T_oktmGD_512_Bump.exr"
+                }
+              ]
+            },
+            {
+              "resolution": "1024x1024",
+              "formats": [
+                {
+                  "mimeType": "image/jpeg",
+                  "contentLength": 154446,
+                  "bitDepth": 32,
+                  "uri": "Dbrs_wood_chunks_T_oktmGD_1K_Bump.jpg"
+                },
+                {
+                  "mimeType": "image/x-exr",
+                  "contentLength": 1292586,
+                  "bitDepth": 8,
+                  "uri": "Dbrs_wood_chunks_T_oktmGD_1K_Bump.exr"
+                }
+              ]
+            },
+            {
+              "resolution": "2048x2048",
+              "formats": [
+                {
+                  "mimeType": "image/jpeg",
+                  "contentLength": 374023,
+                  "bitDepth": 32,
+                  "uri": "Dbrs_wood_chunks_T_oktmGD_2K_Bump.jpg"
+                },
+                {
+                  "mimeType": "image/x-exr",
+                  "contentLength": 7951419,
+                  "bitDepth": 8,
+                  "uri": "Dbrs_wood_chunks_T_oktmGD_2K_Bump.exr"
+                }
+              ]
+            },
+            {
+              "resolution": "4096x4096",
+              "formats": [
+                {
+                  "mimeType": "image/jpeg",
+                  "contentLength": 1064978,
+                  "bitDepth": 32,
+                  "uri": "Dbrs_wood_chunks_T_oktmGD_4K_Bump.jpg"
+                },
+                {
+                  "mimeType": "image/x-exr",
+                  "contentLength": 31184643,
+                  "bitDepth": 8,
+                  "uri": "Dbrs_wood_chunks_T_oktmGD_4K_Bump.exr"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "averageColor": "#818181"
+    },
+    {
+      "minIntensity": 11,
+      "name": "Gloss",
+      "colorSpace": "Linear",
+      "maxIntensity": 102,
+      "type": "gloss",
+      "uris": [
+        {
+          "physicalSize": "0.25x0.25",
+          "resolutions": [
+            {
+              "resolution": "256x256",
+              "formats": [
+                {
+                  "mimeType": "image/jpeg",
+                  "contentLength": 52153,
+                  "bitDepth": 32,
+                  "uri": "Dbrs_wood_chunks_T_oktmGD_256_Gloss.jpg"
+                },
+                {
+                  "mimeType": "image/x-exr",
+                  "contentLength": 232537,
+                  "bitDepth": 8,
+                  "uri": "Dbrs_wood_chunks_T_oktmGD_256_Gloss.exr"
+                }
+              ]
+            },
+            {
+              "resolution": "512x512",
+              "formats": [
+                {
+                  "mimeType": "image/jpeg",
+                  "contentLength": 89009,
+                  "bitDepth": 32,
+                  "uri": "Dbrs_wood_chunks_T_oktmGD_512_Gloss.jpg"
+                },
+                {
+                  "mimeType": "image/x-exr",
+                  "contentLength": 705749,
+                  "bitDepth": 8,
+                  "uri": "Dbrs_wood_chunks_T_oktmGD_512_Gloss.exr"
+                }
+              ]
+            },
+            {
+              "resolution": "1024x1024",
+              "formats": [
+                {
+                  "mimeType": "image/jpeg",
+                  "contentLength": 207733,
+                  "bitDepth": 32,
+                  "uri": "Dbrs_wood_chunks_T_oktmGD_1K_Gloss.jpg"
+                },
+                {
+                  "mimeType": "image/x-exr",
+                  "contentLength": 2128366,
+                  "bitDepth": 8,
+                  "uri": "Dbrs_wood_chunks_T_oktmGD_1K_Gloss.exr"
+                }
+              ]
+            },
+            {
+              "resolution": "2048x2048",
+              "formats": [
+                {
+                  "mimeType": "image/jpeg",
+                  "contentLength": 528575,
+                  "bitDepth": 32,
+                  "uri": "Dbrs_wood_chunks_T_oktmGD_2K_Gloss.jpg"
+                },
+                {
+                  "mimeType": "image/x-exr",
+                  "contentLength": 11549586,
+                  "bitDepth": 8,
+                  "uri": "Dbrs_wood_chunks_T_oktmGD_2K_Gloss.exr"
+                }
+              ]
+            },
+            {
+              "resolution": "4096x4096",
+              "formats": [
+                {
+                  "mimeType": "image/jpeg",
+                  "contentLength": 1646132,
+                  "bitDepth": 32,
+                  "uri": "Dbrs_wood_chunks_T_oktmGD_4K_Gloss.jpg"
+                },
+                {
+                  "mimeType": "image/x-exr",
+                  "contentLength": 40347156,
+                  "bitDepth": 8,
+                  "uri": "Dbrs_wood_chunks_T_oktmGD_4K_Gloss.exr"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "averageColor": "#2C2C2C"
+    },
+    {
+      "minIntensity": 133,
+      "name": "Normal",
+      "colorSpace": "Linear",
+      "maxIntensity": 151,
+      "type": "normal",
+      "uris": [
+        {
+          "physicalSize": "0.25x0.25",
+          "resolutions": [
+            {
+              "resolution": "4096x4096",
+              "formats": [
+                {
+                  "mimeType": "image/x-exr",
+                  "contentLength": 18419785,
+                  "bitDepth": 16,
+                  "uri": "Dbrs_wood_chunks_T_oktmGD_4K_Normal.exr"
+                },
+                {
+                  "mimeType": "image/jpeg",
+                  "contentLength": 2227796,
+                  "bitDepth": 8,
+                  "uri": "Dbrs_wood_chunks_T_oktmGD_4K_Normal.jpg"
+                }
+              ]
+            },
+            {
+              "resolution": "2048x2048",
+              "formats": [
+                {
+                  "mimeType": "image/x-exr",
+                  "contentLength": 5354390,
+                  "bitDepth": 16,
+                  "uri": "Dbrs_wood_chunks_T_oktmGD_2K_Normal.exr"
+                },
+                {
+                  "mimeType": "image/jpeg",
+                  "contentLength": 789624,
+                  "bitDepth": 8,
+                  "uri": "Dbrs_wood_chunks_T_oktmGD_2K_Normal.jpg"
+                }
+              ]
+            },
+            {
+              "resolution": "1024x1024",
+              "formats": [
+                {
+                  "mimeType": "image/x-exr",
+                  "contentLength": 1334574,
+                  "bitDepth": 16,
+                  "uri": "Dbrs_wood_chunks_T_oktmGD_1K_Normal.exr"
+                },
+                {
+                  "mimeType": "image/jpeg",
+                  "contentLength": 250114,
+                  "bitDepth": 8,
+                  "uri": "Dbrs_wood_chunks_T_oktmGD_1K_Normal.jpg"
+                }
+              ]
+            },
+            {
+              "resolution": "512x512",
+              "formats": [
+                {
+                  "mimeType": "image/x-exr",
+                  "contentLength": 390573,
+                  "bitDepth": 16,
+                  "uri": "Dbrs_wood_chunks_T_oktmGD_512_Normal.exr"
+                },
+                {
+                  "mimeType": "image/jpeg",
+                  "contentLength": 78493,
+                  "bitDepth": 8,
+                  "uri": "Dbrs_wood_chunks_T_oktmGD_512_Normal.jpg"
+                }
+              ]
+            },
+            {
+              "resolution": "256x256",
+              "formats": [
+                {
+                  "mimeType": "image/x-exr",
+                  "contentLength": 114131,
+                  "bitDepth": 16,
+                  "uri": "Dbrs_wood_chunks_T_oktmGD_256_Normal.exr"
+                },
+                {
+                  "mimeType": "image/jpeg",
+                  "contentLength": 36358,
+                  "bitDepth": 8,
+                  "uri": "Dbrs_wood_chunks_T_oktmGD_256_Normal.jpg"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "averageColor": "#7F80FE"
+    },
+    {
+      "minIntensity": 153,
+      "name": "Roughness",
+      "colorSpace": "Linear",
+      "maxIntensity": 237,
+      "type": "roughness",
+      "uris": [
+        {
+          "physicalSize": "0.25x0.25",
+          "resolutions": [
+            {
+              "resolution": "256x256",
+              "formats": [
+                {
+                  "mimeType": "image/jpeg",
+                  "contentLength": 50623,
+                  "bitDepth": 32,
+                  "uri": "Dbrs_wood_chunks_T_oktmGD_256_Roughness.jpg"
+                },
+                {
+                  "mimeType": "image/x-exr",
+                  "contentLength": 220234,
+                  "bitDepth": 8,
+                  "uri": "Dbrs_wood_chunks_T_oktmGD_256_Roughness.exr"
+                }
+              ]
+            },
+            {
+              "resolution": "512x512",
+              "formats": [
+                {
+                  "mimeType": "image/jpeg",
+                  "contentLength": 86629,
+                  "bitDepth": 32,
+                  "uri": "Dbrs_wood_chunks_T_oktmGD_512_Roughness.jpg"
+                },
+                {
+                  "mimeType": "image/x-exr",
+                  "contentLength": 623893,
+                  "bitDepth": 8,
+                  "uri": "Dbrs_wood_chunks_T_oktmGD_512_Roughness.exr"
+                }
+              ]
+            },
+            {
+              "resolution": "1024x1024",
+              "formats": [
+                {
+                  "mimeType": "image/jpeg",
+                  "contentLength": 203558,
+                  "bitDepth": 32,
+                  "uri": "Dbrs_wood_chunks_T_oktmGD_1K_Roughness.jpg"
+                },
+                {
+                  "mimeType": "image/x-exr",
+                  "contentLength": 1964311,
+                  "bitDepth": 8,
+                  "uri": "Dbrs_wood_chunks_T_oktmGD_1K_Roughness.exr"
+                }
+              ]
+            },
+            {
+              "resolution": "2048x2048",
+              "formats": [
+                {
+                  "mimeType": "image/jpeg",
+                  "contentLength": 520013,
+                  "bitDepth": 32,
+                  "uri": "Dbrs_wood_chunks_T_oktmGD_2K_Roughness.jpg"
+                },
+                {
+                  "mimeType": "image/x-exr",
+                  "contentLength": 10887920,
+                  "bitDepth": 8,
+                  "uri": "Dbrs_wood_chunks_T_oktmGD_2K_Roughness.exr"
+                }
+              ]
+            },
+            {
+              "resolution": "4096x4096",
+              "formats": [
+                {
+                  "mimeType": "image/jpeg",
+                  "contentLength": 1624906,
+                  "bitDepth": 32,
+                  "uri": "Dbrs_wood_chunks_T_oktmGD_4K_Roughness.jpg"
+                },
+                {
+                  "mimeType": "image/x-exr",
+                  "contentLength": 37512547,
+                  "bitDepth": 8,
+                  "uri": "Dbrs_wood_chunks_T_oktmGD_4K_Roughness.exr"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "averageColor": "#CFCFCF"
+    },
+    {
+      "minIntensity": 50,
+      "name": "Specular",
+      "colorSpace": "sRGB",
+      "maxIntensity": 54,
+      "type": "specular",
+      "uris": [
+        {
+          "physicalSize": "0.25x0.25",
+          "resolutions": [
+            {
+              "resolution": "256x256",
+              "formats": [
+                {
+                  "mimeType": "image/jpeg",
+                  "contentLength": 20182,
+                  "bitDepth": 16,
+                  "uri": "Dbrs_wood_chunks_T_oktmGD_256_Specular.jpg"
+                },
+                {
+                  "mimeType": "image/x-exr",
+                  "contentLength": 79065,
+                  "bitDepth": 8,
+                  "uri": "Dbrs_wood_chunks_T_oktmGD_256_Specular.exr"
+                }
+              ]
+            },
+            {
+              "resolution": "512x512",
+              "formats": [
+                {
+                  "mimeType": "image/jpeg",
+                  "contentLength": 24523,
+                  "bitDepth": 16,
+                  "uri": "Dbrs_wood_chunks_T_oktmGD_512_Specular.jpg"
+                },
+                {
+                  "mimeType": "image/x-exr",
+                  "contentLength": 236218,
+                  "bitDepth": 8,
+                  "uri": "Dbrs_wood_chunks_T_oktmGD_512_Specular.exr"
+                }
+              ]
+            },
+            {
+              "resolution": "1024x1024",
+              "formats": [
+                {
+                  "mimeType": "image/jpeg",
+                  "contentLength": 40501,
+                  "bitDepth": 16,
+                  "uri": "Dbrs_wood_chunks_T_oktmGD_1K_Specular.jpg"
+                },
+                {
+                  "mimeType": "image/x-exr",
+                  "contentLength": 719664,
+                  "bitDepth": 8,
+                  "uri": "Dbrs_wood_chunks_T_oktmGD_1K_Specular.exr"
+                }
+              ]
+            },
+            {
+              "resolution": "2048x2048",
+              "formats": [
+                {
+                  "mimeType": "image/jpeg",
+                  "contentLength": 87344,
+                  "bitDepth": 16,
+                  "uri": "Dbrs_wood_chunks_T_oktmGD_2K_Specular.jpg"
+                },
+                {
+                  "mimeType": "image/x-exr",
+                  "contentLength": 3378691,
+                  "bitDepth": 8,
+                  "uri": "Dbrs_wood_chunks_T_oktmGD_2K_Specular.exr"
+                }
+              ]
+            },
+            {
+              "resolution": "4096x4096",
+              "formats": [
+                {
+                  "mimeType": "image/jpeg",
+                  "contentLength": 277860,
+                  "bitDepth": 16,
+                  "uri": "Dbrs_wood_chunks_T_oktmGD_4K_Specular.jpg"
+                },
+                {
+                  "mimeType": "image/x-exr",
+                  "contentLength": 7121874,
+                  "bitDepth": 8,
+                  "uri": "Dbrs_wood_chunks_T_oktmGD_4K_Specular.exr"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "averageColor": "#353535"
+    },
+    {
+      "minIntensity": 0,
+      "name": "Opacity",
+      "colorSpace": "Linear",
+      "maxIntensity": 255,
+      "type": "opacity",
+      "uris": [
+        {
+          "physicalSize": "0.25x0.25",
+          "resolutions": [
+            {
+              "resolution": "4096x4096",
+              "formats": [
+                {
+                  "mimeType": "image/x-exr",
+                  "contentLength": 7731000,
+                  "bitDepth": 32,
+                  "uri": "Dbrs_wood_chunks_T_oktmGD_4K_Opacity.exr"
+                },
+                {
+                  "mimeType": "image/jpeg",
+                  "contentLength": 735185,
+                  "bitDepth": 8,
+                  "uri": "Dbrs_wood_chunks_T_oktmGD_4K_Opacity.jpg"
+                }
+              ]
+            },
+            {
+              "resolution": "2048x2048",
+              "formats": [
+                {
+                  "mimeType": "image/x-exr",
+                  "contentLength": 2782212,
+                  "bitDepth": 32,
+                  "uri": "Dbrs_wood_chunks_T_oktmGD_2K_Opacity.exr"
+                },
+                {
+                  "mimeType": "image/jpeg",
+                  "contentLength": 328431,
+                  "bitDepth": 8,
+                  "uri": "Dbrs_wood_chunks_T_oktmGD_2K_Opacity.jpg"
+                }
+              ]
+            },
+            {
+              "resolution": "1024x1024",
+              "formats": [
+                {
+                  "mimeType": "image/x-exr",
+                  "contentLength": 922236,
+                  "bitDepth": 32,
+                  "uri": "Dbrs_wood_chunks_T_oktmGD_1K_Opacity.exr"
+                },
+                {
+                  "mimeType": "image/jpeg",
+                  "contentLength": 173410,
+                  "bitDepth": 8,
+                  "uri": "Dbrs_wood_chunks_T_oktmGD_1K_Opacity.jpg"
+                }
+              ]
+            },
+            {
+              "resolution": "512x512",
+              "formats": [
+                {
+                  "mimeType": "image/x-exr",
+                  "contentLength": 426918,
+                  "bitDepth": 32,
+                  "uri": "Dbrs_wood_chunks_T_oktmGD_512_Opacity.exr"
+                },
+                {
+                  "mimeType": "image/jpeg",
+                  "contentLength": 93836,
+                  "bitDepth": 8,
+                  "uri": "Dbrs_wood_chunks_T_oktmGD_512_Opacity.jpg"
+                }
+              ]
+            },
+            {
+              "resolution": "256x256",
+              "formats": [
+                {
+                  "mimeType": "image/x-exr",
+                  "contentLength": 196271,
+                  "bitDepth": 32,
+                  "uri": "Dbrs_wood_chunks_T_oktmGD_256_Opacity.exr"
+                },
+                {
+                  "mimeType": "image/jpeg",
+                  "contentLength": 60012,
+                  "bitDepth": 8,
+                  "uri": "Dbrs_wood_chunks_T_oktmGD_256_Opacity.jpg"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "averageColor": "#313131"
+    }
+  ],
+  "averageColor": "#705C49",
+  "meshes": [
+    {
+      "type": "original",
+      "uris": [
+        {
+          "mimeType": "application/x-obj",
+          "contentLength": 16366245,
+          "uri": "Dbrs_wood_chunks_T_oktmGD_High.obj"
+        },
+        {
+          "mimeType": "application/x-fbx",
+          "contentLength": 4885104,
+          "uri": "Dbrs_wood_chunks_T_oktmGD_High.fbx"
+        }
+      ]
+    },
+    {
+      "type": "lod",
+      "uris": [
+        {
+          "mimeType": "application/x-obj",
+          "contentLength": 1693277,
+          "uri": "Dbrs_wood_chunks_T_oktmGD_LOD0.obj"
+        },
+        {
+          "mimeType": "application/x-fbx",
+          "contentLength": 665056,
+          "uri": "Dbrs_wood_chunks_T_oktmGD_LOD0.fbx"
+        }
+      ],
+      "tris": 10838
+    },
+    {
+      "type": "lod",
+      "uris": [
+        {
+          "mimeType": "application/x-obj",
+          "contentLength": 827257,
+          "uri": "Dbrs_wood_chunks_T_oktmGD_LOD1.obj"
+        },
+        {
+          "mimeType": "application/x-fbx",
+          "contentLength": 455888,
+          "uri": "Dbrs_wood_chunks_T_oktmGD_LOD1.fbx"
+        }
+      ],
+      "tris": 5328
+    }
+  ],
+  "id": "oktmGD",
+  "physicalSize": "0.25x0.25",
+  "pack": null
+}

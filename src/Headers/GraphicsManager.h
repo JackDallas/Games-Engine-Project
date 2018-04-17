@@ -19,6 +19,8 @@ public:
 	this is called by gameEngine()
 	*/
 	static void displayChange(int width, int height);
+
+	static void renderLoading();
 private:
 	//prevent creation 
 	GraphicsManager();

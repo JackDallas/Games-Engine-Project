@@ -31,7 +31,7 @@ void main(){
 	vec3 eyeToPointDir = normalize(-vertViewPos);
 
 	vec3 halfEyeLightPoint = normalize(eyeToPointDir - lightDirection);
-
+    
 	vec3 textureColour = texture(Tex,UV).rgb;
 	vec3 ambientColour  = vec3(0.1f,0.1f,0.2f) * textureColour;
 	

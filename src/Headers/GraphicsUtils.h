@@ -3,6 +3,7 @@
 #include <glm/vec3.hpp>
 #include <glm/vec4.hpp>
 
+#include <SDL2/SDL.h>
 /**
 Colour, a color made of 4 parts red,green.blue,alpha
 */
@@ -37,6 +38,7 @@ public:
 	@return returns a float between 0 and 1 representing the colour 
 	*/
 	static float RGBtoFloat(float v);
+	static SDL_bool boolToSDL(bool b);
 private:
 	//stops class creation
 	GraphicsUtils();

@@ -37,6 +37,7 @@ public:
 
 	Colour getSpecularColour() ;
 	void setSpecularColour(Colour _c) ;
+
 private:
 	float lightPower = 1.0f;
 	float shininess = 50.0f;

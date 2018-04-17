@@ -3,7 +3,7 @@
 ## Dependencies
 - GLM (Maths)
 - GL
-- GLUT (looking to move to SDL2)
+- SDL2
 - Bullet (Coming Soon)
 
 ## Build

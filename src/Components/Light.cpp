@@ -1,7 +1,6 @@
 #include "Light.h"
 
-
-float Light::getLightPower() { 
+float Light::getLightPower() {
 	return lightPower;
 }
 void Light::setLightPower(float _lightPower) {

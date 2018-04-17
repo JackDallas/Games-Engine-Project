@@ -48,12 +48,12 @@ glm::mat4 Transform::getModelMatrix() {
 }
 void Transform::updateModelMatrix() {
 	glm::mat4 TranslationMatrix = glm::translate(glm::mat4(1.0f), position);
-	glm::mat4 RotationMatrix = glm::rotate(glm::mat4(), rotation.y, glm::vec3(-1.0f, 0.0f, 0.0f));
+	glm::mat4 RotationMatrix = glm::rotate(glm::mat4(), rotation.y, glm::vec3(1.0f, 0.0f, 0.0f));
 	RotationMatrix = glm::rotate(RotationMatrix, rotation.x, glm::vec3(0.0f, 1.0f, 0.0f));
 	RotationMatrix = glm::rotate(RotationMatrix, rotation.z, glm::vec3(0.0f, 0.0f, 1.0f));
 	glm::mat4 ScaleMatrix = glm::scale(glm::mat4(1.0f), scaler);
 
-	modelMatrix = TranslationMatrix * RotationMatrix * ScaleMatrix;
+	modelMatrix = RotationMatrix * TranslationMatrix * ScaleMatrix; //todo add rotate point and change this to T*R*RP*S
 
 	//Inform Components tracking the location we've changed
 	for (std::function<void()> callback : positionChangedCallbacks) {

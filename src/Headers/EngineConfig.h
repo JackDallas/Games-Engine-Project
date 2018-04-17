@@ -2,9 +2,10 @@
 //std
 #include <string>
 //ext
-#include <GL/freeglut.h>
+#include <SDL2/SDL.h>
 //int
 #include "GraphicsUtils.h"
+#include "gameEngine.h"
 
 class EngineConfig {
 public:
@@ -43,13 +44,28 @@ public:
 	getScreenWidth
 	@return width of the screen in pixels
 	*/
-	int getScreenWidth() { return fullscreenMode ? screenWidth :  glutGet(GLUT_WINDOW_WIDTH);};
+	int getScreenWidth() {
+		if (!fullscreenMode) {
+			return screenWidth;
+		} else {
+			int screenWidth = 0;
+			SDL_GetWindowSize(gameEngine::context->window, &screenWidth, NULL);
+			return screenWidth;
+		}
+	};
 	/**
 	getScreenHeight
 	@return height of the screen in pixels
 	*/
-	int getScreenHeight() { return fullscreenMode ?  screenHeight : glutGet(GLUT_WINDOW_HEIGHT);};
-
+	int getScreenHeight() {
+		if (!fullscreenMode) {
+			return screenHeight;
+		} else {
+			int screenHeight = 0;
+			SDL_GetWindowSize(gameEngine::context->window, NULL, &screenHeight);
+			return screenHeight;
+		}
+	};
 	/**
 	getScreenWidth
 	@return Colour of the screen clear
@@ -69,7 +85,7 @@ public:
 private:
 	int screenWidth;
 	int screenHeight;
-	
+
 	Colour screenClearColour;
 
 	bool fullscreenMode;

@@ -15,7 +15,7 @@ std::string FileUtils::getExePath()
     std::string filePath = std::string( result, GetModuleFileName( NULL, result, MAX_PATH ) );
     //Removes the exe part leaving the containing folder
     std::string folderPath = filePath.substr(0,filePath.find_last_of("\\"));
-    return folderPath;
+    return folderPath + "\\";
 }
 std::string FileUtils::getProgramPath() {
 //pre made for future cross platform

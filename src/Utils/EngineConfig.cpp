@@ -2,7 +2,6 @@
 
 #include "GraphicsUtils.h"
 
-#include <GL/freeglut.h>
 
 #include "Logger.h"
 EngineConfig::EngineConfig(int _screenWidth, int _screenHeight, Colour _screenClearColour, bool _fullscreenMode, std::string _windowName) { //All
