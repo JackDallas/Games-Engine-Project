@@ -25,7 +25,7 @@ public:
 		std::shared_ptr<PBRRenderer> rockRenderer = Rock->addComponent<PBRRenderer>();
 
 		rockRenderer->attachMesh(rockMesh);
-		rockRenderer->init(
+		/*rockRenderer->init(
 		    FileUtils::getProgramPath() + "..\\src\\Shaders\\Rewrite_PBRVertShader.vert",
 		    FileUtils::getProgramPath() + "..\\src\\Shaders\\Rewrite_PBRFragShader.frag",
 		{
@@ -33,7 +33,7 @@ public:
 			{"Roughness", _folderLocation + "\\" + assetName + "_4K_Roughness.jpg"},
 			{"Spec", _folderLocation + "\\" + assetName + "_4K_Specular.jpg"}
 		});
-
+*/
 
 		return Rock;
 	}

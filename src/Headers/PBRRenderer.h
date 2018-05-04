@@ -19,7 +19,7 @@ public:
 	void onUpdate(float deltaTime);
 	void onAwake();
 
-	void init(std::string vertShaderLoc,std::string fragShaderLoc, std::map<std::string, std::string> texMap);
+	void init(std::string vertShaderLoc, std::string fragShaderLoc, std::string albedoLoc, std::string roughnessLoc, std::string specLoc);
 	void attachMesh(std::shared_ptr<Mesh> _mesh);
 
 	/**
@@ -34,5 +34,7 @@ public:
 private:
 	std::weak_ptr<Mesh> mesh;
 
-	std::map<std::string, GLuint> textures;
+	GLuint albedoTexture;
+	GLuint roughnessTexture;
+	GLuint specTexture;
 };

@@ -17,9 +17,9 @@ uniform float Alpha = 1.0f;
 
 uniform	float LightPower = 1.5f;
 
-layout(location=0) uniform sampler2D Tex;
-layout(location=1) uniform sampler2D Roughness;
-layout(location=2) uniform sampler2D Spec;
+uniform sampler2D Tex;
+uniform sampler2D Roughness;
+uniform sampler2D Spec;
 
 //Output Colour
 out vec4 colour;
@@ -43,7 +43,7 @@ float GeometryFunction(float NormalDotHalf, float NormalDotView, float NormalDot
 // α = roughness2
 //DGGX(m) = α2 / π((n⋅m)2(α2−1)+1)2
 float NDF(float NormalDotHalf, float roughness){//GGX Trowbridge-Reitz
-	float roughnessSqr = roughness * roughness;
+	float roughnessSqr = roughness * roughness; 
 	return roughnessSqr / (PI * pow((pow(NormalDotHalf,2.0f) * (roughnessSqr - 1.0f) + 1.0f),2.0f));
 }
 
@@ -78,11 +78,7 @@ void main(void){
 
 	vec3 BRDF = (SpecularDist * GeometryShadowing * Fresnel) / (4.0f * NormalDotLight * NormalDotView);
 
-	vec3 diffuse = vec3(reflectance / PI) * NormalDotLight;
+	//vec3 diffuse = vec3(reflectance / PI) * NormalDotLight;
 	
-	//colour = vec4(1.0f, 0.0f, 0.0f, 1.0f);
-
-	colour = vec4(SpecularColour,1);
-	//colour = vec4((BRDF + textureColour + diffuse) * LightPower .5 ,1);
-	//colour = vec4(SpecularColour,1);
+	colour = vec4((BRDF + textureColour) * LightPower,1);
 }

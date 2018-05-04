@@ -25,14 +25,20 @@ void GraphicsManager::init() {
 	                                  SDL_WINDOW_SHOWN | SDL_WINDOW_OPENGL);
 	gameEngine::context->renderer = SDL_CreateRenderer(gameEngine::context->window, -1, 0);
 	gameEngine::context->SDLContext = SDL_GL_CreateContext(gameEngine::context->window);
-	/*
-	gameEngine::context->config->getFullScreenMode() ?  glutInitWindowSize(200, 400) : glutInitWindowSize(gameEngine::context->config->getScreenWidth(), gameEngine::context->config->getScreenWidth());
-	glutInitDisplayMode(GLUT_RGBA | GLUT_DOUBLE | GLUT_DEPTH);
-	glutCreateWindow(gameEngine::context->config->getWindowName().c_str());
-	glutSetOption(GLUT_ACTION_ON_WINDOW_CLOSE, GLUT_ACTION_GLUTMAINLOOP_RETURNS);
-	glutSetWindowTitle(gameEngine::context->config->getWindowName().c_str());
-	if (gameEngine::context->config->getFullScreenMode()) glutFullScreen();*/
-//
+
+	SDL_SetHint( SDL_HINT_RENDER_SCALE_QUALITY, "1" ); //linear filtering 
+
+	SDL_GL_SetAttribute(SDL_GL_RED_SIZE, 8);
+    SDL_GL_SetAttribute(SDL_GL_GREEN_SIZE, 8);
+    SDL_GL_SetAttribute(SDL_GL_BLUE_SIZE, 8);
+    SDL_GL_SetAttribute(SDL_GL_ALPHA_SIZE, 8);
+
+    SDL_GL_SetAttribute(SDL_GL_DEPTH_SIZE, 32);
+
+    SDL_GL_SetAttribute(SDL_GL_MULTISAMPLEBUFFERS, 1);
+    SDL_GL_SetAttribute(SDL_GL_MULTISAMPLESAMPLES, 2);
+
+    SDL_GL_SetAttribute(SDL_GL_ACCELERATED_VISUAL, 1); 
 //glew
 	Logger::Info("Initing GLEW");
 	glewInit();
@@ -43,14 +49,18 @@ void GraphicsManager::init() {
 //
 //GL
 	Logger::Info("Initing GL");
-	//glBlendFunc(GL_SRC_ALPHA, GL_ONE_MINUS_SRC_ALPHA);
-	//glEnable(GL_BLEND);
+	glBlendFunc(GL_SRC_ALPHA, GL_ONE_MINUS_SRC_ALPHA);
+	glEnable(GL_BLEND);
 	glEnable(GL_DEPTH_TEST);
 	glEnable(GL_TEXTURE_2D);
 	glEnable(GL_LIGHTING);
+	glEnable(GL_MULTISAMPLE);
+	//glEnable(GL_POLYGON_SMOOTH); // Shows lines../
+	//glEnable( GL_LINE_SMOOTH ); // Shows lines../
 	glDepthFunc(GL_LESS);
-	//glEnable(GL_CULL_FACE);
-	//glCullFace(GL_FRONT);
+	glShadeModel(GL_SMOOTH);
+	//glEnable(GL_CULL_FACE); //stops rendering
+	//glCullFace(GL_FRONT); // just breaks everything
 //
 }
 

@@ -26,10 +26,11 @@
 int main(int argc, char* argv[]) {
 	gameEngine::init(argc, argv);
 //1280, 720
-	EngineConfig config(1280, 720, Colour(0.0f, 0.0f, 0.4f, 1.0f), false, "PBR Renderer - DISSO");
+	EngineConfig config(1280, 720, Colour(1.0f, 1.0f, 1.0f, 1.0f), false, "PBR Renderer - DISSO");
 
 	gameEngine::configure(config);
-
+////////////////////////////////////
+	/*
 
 	std::shared_ptr<GameObject> plane = gameEngine::newGameObject();
 	plane->addComponent<Transform>()->setPosition(glm::vec3(0.0f, 0.0f, 0.0f));
@@ -41,11 +42,10 @@ int main(int argc, char* argv[]) {
 	std::shared_ptr<GameObject> jiggy = gameEngine::newGameObject();
 	jiggy->addComponent<Transform>()->setPosition(glm::vec3(10.0f, 0.0f, 10.0f));
 
-	std::shared_ptr<Mesh> mesh_jiggy = std::make_shared<Mesh>(FileUtils::getProgramPath() + "..\\dependencies\\Models\\Jiggy\\Jiggy.obj",FileUtils::getProgramPath() + "..\\dependencies\\Models\\Jiggy\\image_0000.png");
-/*PBRModelHelper::newPBRObject(FileUtils::getProgramPath() + "..\\dependencies\\Models\\Rock", "Aset_rock_granite_M_rbjtT", glm::vec3(5.0f, 0.0f, 0.0f));*/
+	std::shared_ptr<Mesh> mesh_jiggy = std::make_shared<Mesh>(FileUtils::getProgramPath() + "..\\dependencies\\Models\\Jiggy\\Jiggy.obj",FileUtils::getProgramPath() + "..\\dependencies\\Models\\Jiggy\\image_0000.png");s
+
 	std::shared_ptr<GameObject> Rock = gameEngine::newGameObject();
 	Rock->addComponent<Transform>()->setPosition(glm::vec3(5.0f, 0.0f, 0.0f));
-
 	std::shared_ptr<Mesh> rockMesh = std::make_shared<Mesh>(FileUtils::getProgramPath() + "..\\dependencies\\Models\\Rock\\Aset_rock_granite_M_rbjtT_LOD0.obj");
 
 	std::shared_ptr<PBRRenderer> rockRenderer = Rock->addComponent<PBRRenderer>();
@@ -54,24 +54,33 @@ int main(int argc, char* argv[]) {
 	rockRenderer->init(
 		FileUtils::getProgramPath() + "..\\src\\Shaders\\Rewrite_PBRVertShader.vert",
 		FileUtils::getProgramPath() + "..\\src\\Shaders\\Rewrite_PBRFragShader.frag",
-	{
-		{"Tex", FileUtils::getProgramPath() + "..\\dependencies\\Models\\Rock\\Aset_rock_granite_M_rbjtT_4K_Albedo.jpg"},
-		{"Roughness", FileUtils::getProgramPath() + "..\\dependencies\\Models\\Rock\\Aset_rock_granite_M_rbjtT_4K_Roughness.jpg"},
-		{"Spec", FileUtils::getProgramPath() + "..\\dependencies\\Models\\Rock\\Aset_rock_granite_M_rbjtT_4K_Specular.jpg"}
-	});
+	
+		FileUtils::getProgramPath() + "..\\dependencies\\Models\\Rock\\Aset_rock_granite_M_rbjtT_4K_Albedo.jpg",
+		FileUtils::getProgramPath() + "..\\dependencies\\Models\\Rock\\Aset_rock_granite_M_rbjtT_4K_Roughness.jpg",
+		FileUtils::getProgramPath() + "..\\dependencies\\Models\\Rock\\Aset_rock_granite_M_rbjtT_4K_Specular.jpg"
+	);*/
+////////////////////////////////////
+	std::shared_ptr<GameObject> mug = gameEngine::newGameObject();
 
-	//std::shared_ptr<GameObject> trees = PBRModelHelper::newPBRObject(FileUtils::getProgramPath() + "..\\dependencies\\Models\\wood_chunks", "Dbrs_wood_chunks_T_oktmGD", glm::vec3(15.0f, 0.0f, 0.0f));
+	std::shared_ptr<Transform> mugTrans = mug->addComponent<Transform>();
+	mugTrans->setPosition(glm::vec3(5.0f, 0.0f, 0.0f));
+	mugTrans->setScale(glm::vec3(0.4f,0.4f,0.4f));
 
+	std::shared_ptr<Mesh> mugMesh = std::make_shared<Mesh>
+	(FileUtils::getProgramPath() + "..\\dependencies\\Models\\Mug\\Mug.obj");
 
-	//Create a new GameObject
-	/*	std::shared_ptr<GameObject> blendSphere = gameEngine::newGameObject();
-			//Attach a transform and set the position
-			blendSphere->addComponent<Transform>()->setPosition(glm::vec3(5.0f, 0.0f, 0.0f));
-			//Attach a mesh renderer and mesh
-			std::shared_ptr<Mesh> mesh_bSphere = std::make_shared<Mesh>(FileUtils::getProgramPath() + "Models\\sphere.obj");
-			blendSphere->addComponent<MeshRenderer>()->attachMesh(mesh_bSphere);*/
+	std::shared_ptr<PBRRenderer> mugRenderer = mug->addComponent<PBRRenderer>();
 
-
+	mugRenderer->attachMesh(mugMesh);
+	mugRenderer->init(
+		FileUtils::getProgramPath() + "..\\src\\Shaders\\Rewrite_PBRVertShader.vert",
+		FileUtils::getProgramPath() + "..\\src\\Shaders\\Rewrite_PBRFragShader.frag",
+	
+		FileUtils::getProgramPath() + "..\\dependencies\\Models\\Mug\\Mug_Albedo.jpg",
+		FileUtils::getProgramPath() + "..\\dependencies\\Models\\Mug\\Mug_Roughness.jpg",
+		FileUtils::getProgramPath() + "..\\dependencies\\Models\\Mug\\Mug_Specular.jpg"
+	);
+//////////////////////////////////////
 	gameEngine::run();
 
 	return 0;

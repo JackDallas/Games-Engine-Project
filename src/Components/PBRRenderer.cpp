@@ -21,24 +21,38 @@ void PBRRenderer::attachMesh(std::shared_ptr<Mesh> _mesh) {
 	mesh = _mesh;
 }
 
-void PBRRenderer::init(std::string vertShaderLoc, std::string fragShaderLoc, std::map<std::string, std::string> texMap) {
+void PBRRenderer::init(std::string vertShaderLoc, std::string fragShaderLoc,
+                       std::string albedoLoc,
+                       std::string roughnessLoc,
+                       std::string specLoc) {
+
+	albedoTexture = SOIL_load_OGL_texture(
+	    albedoLoc.c_str(),
+	    SOIL_LOAD_AUTO,
+	    SOIL_CREATE_NEW_ID,
+	    SOIL_FLAG_MIPMAPS | SOIL_FLAG_INVERT_Y | SOIL_FLAG_NTSC_SAFE_RGB | SOIL_FLAG_COMPRESS_TO_DXT
+	);
+
+	roughnessTexture = SOIL_load_OGL_texture(
+	    roughnessLoc.c_str(),
+	    SOIL_LOAD_AUTO,
+	    SOIL_CREATE_NEW_ID,
+	    SOIL_FLAG_MIPMAPS | SOIL_FLAG_INVERT_Y | SOIL_FLAG_NTSC_SAFE_RGB | SOIL_FLAG_COMPRESS_TO_DXT
+	);
+
+	specTexture = SOIL_load_OGL_texture(
+	    specLoc.c_str(),
+	    SOIL_LOAD_AUTO,
+	    SOIL_CREATE_NEW_ID,
+	    SOIL_FLAG_MIPMAPS | SOIL_FLAG_INVERT_Y | SOIL_FLAG_NTSC_SAFE_RGB | SOIL_FLAG_COMPRESS_TO_DXT
+	);
+
 	std::vector<std::string> v;
 
-	for (std::pair<std::string, std::string> tex : texMap) {
-		//make texture
-		//add to map
-		textures.insert(std::pair<std::string,GLuint>(
-			tex.first,
-			SOIL_load_OGL_texture(
-	              tex.second.c_str(),
-	              SOIL_LOAD_AUTO,
-	              SOIL_CREATE_NEW_ID,
-	              SOIL_FLAG_MIPMAPS | SOIL_FLAG_INVERT_Y | SOIL_FLAG_NTSC_SAFE_RGB | SOIL_FLAG_COMPRESS_TO_DXT
-	          )
-			));
-		//register uniform
-		v.push_back(tex.first);
-	}
+	//register uniforms
+	v.push_back("Tex");
+	v.push_back("Roughness");
+	v.push_back("Spec");
 
 	//Default uniforms
 	v.push_back("Model");
@@ -58,6 +72,23 @@ void PBRRenderer::init(std::string vertShaderLoc, std::string fragShaderLoc, std
 	             fragShaderLoc,
 	             v, true);
 
+			//
+			glActiveTexture(GL_TEXTURE0);
+			glBindTexture(GL_TEXTURE_2D, albedoTexture);
+			glUniform1i(shader->getUniformID("Tex"), 0);
+			//
+
+			//
+			glActiveTexture(GL_TEXTURE1);
+			glBindTexture(GL_TEXTURE_2D, roughnessTexture);
+			glUniform1i(shader->getUniformID("Roughness"), 1);
+			//
+
+			//
+			glActiveTexture(GL_TEXTURE2);
+			glBindTexture(GL_TEXTURE_2D, specTexture);
+			glUniform1i(shader->getUniformID("Spec"), 2);
+			//
 }
 
 void PBRRenderer::onRender() {
@@ -70,16 +101,7 @@ void PBRRenderer::onRender() {
 			glUniformMatrix4fv(shader->getUniformID("View"), 1, GL_FALSE, &Camera::getMainCamera().lock()->getViewMatrix()[0][0]);
 			glUniformMatrix4fv(shader->getUniformID("Projection"), 1, GL_FALSE, &Camera::getMainCamera().lock()->getProjectionMatrix()[0][0]);
 
-			//Check this mesh has textures
-			if (!textures.empty()) {
-			int textureNumber = 0;
-				for (std::pair<std::string, GLuint> currentTex : textures) {
-					glActiveTexture(GL_TEXTURE0 + textureNumber);
-					glUniform1i(shader->getUniformID(currentTex.first), textureNumber);
-					glBindTexture(GL_TEXTURE_2D, currentTex.second);
-					textureNumber++;
-				}
-			}
+
 			//if we have a main light
 			if (gameEngine::context->mainLight) {
 				glUniform4fv( shader->getUniformID("LightPosition"), 1, glm::value_ptr(gameEngine::context->mainLight->getComponent<Transform>()->getWorldPosition()));
@@ -104,8 +126,8 @@ void PBRRenderer::onAwake() {
 	transform = gameObject.lock()->getComponent<Transform>();
 }
 
-void PBRRenderer::onUpdate(float deltaTime){
-	if(shader->liveReload){
+void PBRRenderer::onUpdate(float deltaTime) {
+	if (shader->liveReload) {
 		shader->checkForReload();
 	}
 }
